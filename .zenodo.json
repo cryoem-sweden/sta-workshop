@@ -1,7 +1,7 @@
 {
   "title": "Training title",
   "upload_type": "lesson",
-  "description": "<p>Provide a short description of the training, including its main topic, purpose, or focus.</p>\n<p>Training dates: 2026-01-01 – 2026-01-02.</p>\n<p>Training website: <a href=\"https://scilifelab-training.github.io/scilifelab-training-template/0000/\">https://scilifelab-training.github.io/scilifelab-training-template/0000/</a></p>\n<p>Funded by: Name of funding organisation.</p>",
+  "description": "<p>Provide a short description of the training, including its main topic, purpose, or focus.</p>\n<p>Training dates: 2026-01-01 – 2026-01-02.</p>\n<p>Training website: <a href=\"https://cryoem-sweden.github.io/sta-workshop/2612/\">https://cryoem-sweden.github.io/sta-workshop/2612/</a></p>\n<p>Funded by: Name of funding organisation.</p>",
   "creators": [
     {
       "name": "Lastname1, Firstname1",
@@ -37,10 +37,10 @@
   ],
   "license": "cc-by-4.0",
   "access_right": "open",
-  "version": "0000",
+  "version": "2612",
   "related_identifiers": [
     {
-      "identifier": "https://scilifelab-training.github.io/scilifelab-training-template/0000/",
+      "identifier": "https://cryoem-sweden.github.io/sta-workshop/2612/",
       "relation": "isSupplementedBy",
       "resource_type": "other"
     }
