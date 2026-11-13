@@ -3,9 +3,7 @@
 
 [![Licence](https://img.shields.io/badge/licence-CC_BY_4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
 
-*Training subtitle*
-
-Description of the content of the training. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra vehicula est non feugiat. Maecenas nec cursus eros, at consectetur enim. Ut tincidunt eros ipsum, ut tempor tortor eleifend eu. Aliquam hendrerit dui tristique felis faucibus semper. Integer placerat, mauris id tempus ultricies, felis magna ultricies risus, nec ullamcorper nisi justo ut mi. Duis scelerisque molestie sollicitudin.
+The focus of the workshop is to provide training in some of the most recent developments of CryoET and STA data processing using for instance **nextPYP**, **TomoBEAR**, **Warp/M**, taught by the developers themselves. The workshop provides hands-on training in CryoET and STA encompassing all stages of the pipeline. No previous experience is required. Participants are required to bring their own laptops with mouse to the workshop.
 <!-- /generated:header -->
 
 <!-- Write this yourself -->
@@ -30,9 +28,13 @@ instances of the training. Each `release-YYMM` branch holds one instance
 
 After completing this training, participants will be able to:
 
-- Learning outcome 1
-- Learning outcome 2
-- Learning outcome 3
+- Alignment and reconstruction of tilt series
+- Manual and automated particle picking
+- Archiving and cataloguing of tilt series, tomograms and annotations
+- Creation of subtomogram averaging projects
+- Advanced tools in subtomogram averaging
+- Classification methods
+- Creation of 3D maps
 <!-- /generated:learning-outcomes -->
 
 ## Training instances
@@ -51,10 +53,11 @@ of each instance are on its own `release-YYMM` branch.
 
 | Name | Role | Author | ORCID | Affiliation |
 |------|------|--------|-------|-------------|
-| Firstname1 Lastname1 | Founder | Yes |  | Institution or organisation |
-| Firstname2 Lastname2 | Founder | Yes |  | Institution or organisation |
-| Firstname3 Lastname3 | Contributor | Yes |  | Institution or organisation |
-| Firstname4 Lastname4 | Contributor | Yes |  | Institution or organisation |
+| Karin Walldén | Founder | Yes |  | Stockholm University |
+| Marta Carroni | Founder | Yes |  | Stockholm University |
+| Mathieu Coincon | Founder | Yes |  | Stockholm University |
+| Stavros Azinas | Founder | Yes |  | Stockholm University |
+| Gerrit Timpert | Founder | Yes |  | Stockholm University |
 
 Only authors are credited in the [citation](#citation), and as creators on Zenodo.
 <!-- /generated:contributors -->
@@ -75,7 +78,7 @@ materials of a training instance.
 
 If you use these materials, please cite them as:
 
-> Lastname1, F.; Lastname2, F.; Lastname3, F.; Lastname4, F. Cryo-ET and Subtomogram averaging Workshop. https://cryoem-sweden.github.io/sta-workshop/
+> Walldén, K.; Carroni, M.; Coincon, M.; Azinas, S.; Timpert, G. Cryo-ET and Subtomogram averaging Workshop. https://cryoem-sweden.github.io/sta-workshop/
 
 Citation metadata is available in [CITATION.cff](CITATION.cff).
 <!-- /generated:citation -->

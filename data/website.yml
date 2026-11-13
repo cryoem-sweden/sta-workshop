@@ -71,7 +71,7 @@ website:
 
   labels:
     # Button that links to the current training instance.
-    hero_view_current_label: "Take me to the current instance"
+    hero_view_current_label: "Go to the 2026 training"
     # Button that links to the registration of the current instance.
     # Only shown when the current instance has a registration_url in
     # data/instances.yml.

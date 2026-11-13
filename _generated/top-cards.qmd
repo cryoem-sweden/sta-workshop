@@ -8,11 +8,11 @@
 </div>
 
 :::{.card-copy}
-Description of the content of the training.
+The focus of the workshop is to provide training in some of the most recent developments of CryoET and STA data processing using for instance **nextPYP**, **TomoBEAR**, **Warp/M**, taught by the developers themselves.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra vehicula est non feugiat. Maecenas nec cursus eros, at consectetur enim. Ut tincidunt eros ipsum, ut tempor tortor eleifend eu.
+The workshop provides hands-on training in CryoET and STA encompassing all stages of the pipeline.
 
-Aliquam hendrerit dui tristique felis faucibus semper. Integer placerat, mauris id tempus ultricies, felis magna ultricies risus, nec ullamcorper nisi justo ut mi. Duis scelerisque molestie sollicitudin.
+No previous experience is required. Participants are required to bring their own laptops with mouse to the workshop.
 :::
 :::
 
@@ -25,9 +25,13 @@ Aliquam hendrerit dui tristique felis faucibus semper. Integer placerat, mauris 
 </div>
 
 :::{.card-copy}
-1. Learning outcome 1
-2. Learning outcome 2
-3. Learning outcome 3
+1. Alignment and reconstruction of tilt series
+2. Manual and automated particle picking
+3. Archiving and cataloguing of tilt series, tomograms and annotations
+4. Creation of subtomogram averaging projects
+5. Advanced tools in subtomogram averaging
+6. Classification methods
+7. Creation of 3D maps
 :::
 :::
 
@@ -40,10 +44,11 @@ Aliquam hendrerit dui tristique felis faucibus semper. Integer placerat, mauris 
 </div>
 
 :::{.card-copy}
-- Keyword 1
-- Keyword 2
-- Keyword 3
-- Keyword 4
+- Cryo-electron tomography
+- Subtomogram averaging
+- Tomogram reconstruction
+- Particle picking
+- Structural biology
 :::
 :::
 
@@ -56,10 +61,10 @@ Aliquam hendrerit dui tristique felis faucibus semper. Integer placerat, mauris 
 </div>
 
 :::{.card-copy}
-- Topic 1
-- Topic 2
-- Topic 3
-- Topic 4
+- alignment and reconstruction of tilt series
+- tomogram visualization and archiving
+- particle selection and extraction
+- subtomogram alignment, averaging, refinement and classification
 :::
 :::
 :::

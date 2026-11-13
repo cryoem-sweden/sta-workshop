@@ -1,30 +1,35 @@
 {
   "title": "Cryo-ET and Subtomogram averaging Workshop",
   "upload_type": "lesson",
-  "description": "<p>Description of the content of the training.</p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra vehicula est non feugiat. Maecenas nec cursus eros, at consectetur enim. Ut tincidunt eros ipsum, ut tempor tortor eleifend eu.</p>\n<p>Aliquam hendrerit dui tristique felis faucibus semper. Integer placerat, mauris id tempus ultricies, felis magna ultricies risus, nec ullamcorper nisi justo ut mi. Duis scelerisque molestie sollicitudin.</p>\n<p>Training website: <a href=\"https://cryoem-sweden.github.io/sta-workshop/\">https://cryoem-sweden.github.io/sta-workshop/</a></p>",
+  "description": "<p>The focus of the workshop is to provide training in some of the most recent developments of CryoET and STA data processing using for instance nextPYP, TomoBEAR, Warp/M, taught by the developers themselves.</p>\n<p>The workshop provides hands-on training in CryoET and STA encompassing all stages of the pipeline.</p>\n<p>No previous experience is required. Participants are required to bring their own laptops with mouse to the workshop.</p>\n<p>Training website: <a href=\"https://cryoem-sweden.github.io/sta-workshop/\">https://cryoem-sweden.github.io/sta-workshop/</a></p>",
   "creators": [
     {
-      "name": "Lastname1, Firstname1",
-      "affiliation": "Institution or organisation"
+      "name": "Walldén, Karin",
+      "affiliation": "Stockholm University"
     },
     {
-      "name": "Lastname2, Firstname2",
-      "affiliation": "Institution or organisation"
+      "name": "Carroni, Marta",
+      "affiliation": "Stockholm University"
     },
     {
-      "name": "Lastname3, Firstname3",
-      "affiliation": "Institution or organisation"
+      "name": "Coincon, Mathieu",
+      "affiliation": "Stockholm University"
     },
     {
-      "name": "Lastname4, Firstname4",
-      "affiliation": "Institution or organisation"
+      "name": "Azinas, Stavros",
+      "affiliation": "Stockholm University"
+    },
+    {
+      "name": "Timpert, Gerrit",
+      "affiliation": "Stockholm University"
     }
   ],
   "keywords": [
-    "Keyword 1",
-    "Keyword 2",
-    "Keyword 3",
-    "Keyword 4"
+    "Cryo-electron tomography",
+    "Subtomogram averaging",
+    "Tomogram reconstruction",
+    "Particle picking",
+    "Structural biology"
   ],
   "license": "cc-by-4.0",
   "access_right": "open",

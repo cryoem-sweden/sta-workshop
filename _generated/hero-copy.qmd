@@ -1,7 +1,3 @@
 :::{.hero__title}
 Cryo-ET and Subtomogram averaging Workshop
 :::
-
-:::{.hero__subtitle}
-Training subtitle
-:::

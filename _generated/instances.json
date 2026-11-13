@@ -1,16 +1,10 @@
 {
   "instances": [
     {
-      "slug": "0000",
-      "label": "September 2026",
+      "slug": "2612",
+      "label": "December 2026",
       "status": "current",
-      "url": "./0000/"
-    },
-    {
-      "slug": "2505",
-      "label": "May 2025",
-      "status": "previous",
-      "url": "./2505/"
+      "url": "./2612/"
     },
     {
       "slug": "2411",

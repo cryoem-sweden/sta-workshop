@@ -54,21 +54,43 @@ team:
     # Founders
     # --------------------------------------------------
 
-    - given_names: "Firstname1"
-      family_names: "Lastname1"
+    - given_names: "Karin"
+      family_names: "Walldén"
       roles:
         - Founder
-      affiliation: "Institution or organisation"
+      affiliation: "Stockholm University"
       orcid: ""
-      email: ""
-      course_contact: false
       citation_author: true
 
-    - given_names: "Firstname2"
-      family_names: "Lastname2"
+    - given_names: "Marta"
+      family_names: "Carroni"
       roles:
         - Founder
-      affiliation: "Institution or organisation"
+      affiliation: "Stockholm University"
+      orcid: ""
+      citation_author: true
+
+    - given_names: "Mathieu"
+      family_names: "Coincon"
+      roles:
+        - Founder
+      affiliation: "Stockholm University"
+      orcid: ""
+      citation_author: true
+
+    - given_names: "Stavros"
+      family_names: "Azinas"
+      roles:
+        - Founder
+      affiliation: "Stockholm University"
+      orcid: ""
+      citation_author: true
+
+    - given_names: "Gerrit"
+      family_names: "Timpert"
+      roles:
+        - Founder
+      affiliation: "Stockholm University"
       orcid: ""
       citation_author: true
 
@@ -76,18 +98,11 @@ team:
     # Contributors
     # --------------------------------------------------
 
-    - given_names: "Firstname3"
-      family_names: "Lastname3"
-      roles:
-        - Contributor
-      affiliation: "Institution or organisation"
-      orcid: ""
-      citation_author: true
+    #- given_names: "Firstname3"
+     # family_names: "Lastname3"
+      #roles:
+      #  - Contributor
+      #affiliation: "Institution or organisation"
+      #orcid: ""
+      #citation_author: true
 
-    - given_names: "Firstname4"
-      family_names: "Lastname4"
-      roles:
-        - Contributor
-      affiliation: "Institution or organisation"
-      orcid: ""
-      citation_author: true

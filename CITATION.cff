@@ -3,25 +3,29 @@
 cff-version: 1.2.0
 message: If you use or reuse these training materials, please cite them as below.
 title: Cryo-ET and Subtomogram averaging Workshop
-abstract: Description of the content of the training. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra vehicula est non feugiat. Maecenas nec cursus eros, at consectetur enim. Ut tincidunt eros ipsum, ut tempor tortor eleifend eu. Aliquam hendrerit dui tristique felis faucibus semper. Integer placerat, mauris id tempus ultricies, felis magna ultricies risus, nec ullamcorper nisi justo ut mi. Duis scelerisque molestie sollicitudin.
+abstract: The focus of the workshop is to provide training in some of the most recent developments of CryoET and STA data processing using for instance nextPYP, TomoBEAR, Warp/M, taught by the developers themselves. The workshop provides hands-on training in CryoET and STA encompassing all stages of the pipeline. No previous experience is required. Participants are required to bring their own laptops with mouse to the workshop.
 authors:
-- family-names: Lastname1
-  given-names: Firstname1
-  affiliation: Institution or organisation
-- family-names: Lastname2
-  given-names: Firstname2
-  affiliation: Institution or organisation
-- family-names: Lastname3
-  given-names: Firstname3
-  affiliation: Institution or organisation
-- family-names: Lastname4
-  given-names: Firstname4
-  affiliation: Institution or organisation
+- family-names: Walldén
+  given-names: Karin
+  affiliation: Stockholm University
+- family-names: Carroni
+  given-names: Marta
+  affiliation: Stockholm University
+- family-names: Coincon
+  given-names: Mathieu
+  affiliation: Stockholm University
+- family-names: Azinas
+  given-names: Stavros
+  affiliation: Stockholm University
+- family-names: Timpert
+  given-names: Gerrit
+  affiliation: Stockholm University
 keywords:
-- Keyword 1
-- Keyword 2
-- Keyword 3
-- Keyword 4
+- Cryo-electron tomography
+- Subtomogram averaging
+- Tomogram reconstruction
+- Particle picking
+- Structural biology
 license: CC-BY-4.0
 url: https://cryoem-sweden.github.io/sta-workshop/
 repository-code: https://github.com/cryoem-sweden/sta-workshop
