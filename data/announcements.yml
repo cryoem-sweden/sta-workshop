@@ -1,0 +1,60 @@
+announcements:
+
+# OPTIONAL 
+
+  # This file contains announcements for participants. They are shown on
+  # the Announcements page, newest first. The two most recent
+  # announcements are also shown on the overview page.
+
+  # ==================================================
+  # Leaving information out
+  # ==================================================
+  #
+  # Announcements are optional. Without announcements, the Announcements
+  # page is left out of the navbar, and the overview page shows
+  # "No active announcements."
+  #
+  # - To remove one announcement, delete it from its "- date:" line down to
+  #   the end of its text.
+  # - To have no announcements, delete all items, or empty or delete this
+  #   file.
+  #
+  # Every announcement needs a date, a title and a text. Do not leave
+  # these empty.
+
+  # --------------------------------------------------
+  # Page introduction
+  # --------------------------------------------------
+
+  intro: >
+    Use this page to provide participants with short updates and important information about the training.
+
+  # --------------------------------------------------
+  # Announcements
+  # --------------------------------------------------
+  #
+  # Add one entry for each announcement.
+  #
+  # "date" should use ISO format: YYYY-MM-DD.
+  # Announcements are automatically ordered by date,
+  # with the newest announcement shown first.
+
+  items:
+
+    - date: 2026-01-01
+      title: "Announcement title"
+      text: >
+        Provide a short update or important information
+        for participants.
+
+    - date: 2026-01-02
+      title: "Announcement title"
+      text: >
+        Provide a short update or important information
+        for participants.
+
+    - date: 2026-01-03
+      title: "Announcement title"
+      text: >
+        Provide a short update or important information
+        for participants.
