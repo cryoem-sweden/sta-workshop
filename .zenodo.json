@@ -1,7 +1,7 @@
 {
   "title": "SciLifeLab Training Webpage Template",
   "upload_type": "software",
-  "description": "<p>A Quarto-based template for creating, publishing and maintaining FAIR, reusable training websites with GitHub Pages. A landing page lists all instances of a training, and each training instance has its own website with an overview, schedule, content pages, syllabus and information pages, generated from structured data files.</p>\n<p>Website: <a href=\"https://scilifelab-training.github.io/scilifelab-training-template/\">https://scilifelab-training.github.io/scilifelab-training-template/</a></p>",
+  "description": "<p>A Quarto-based template for creating, publishing and maintaining FAIR, reusable training websites with GitHub Pages. A landing page lists all instances of a training, and each training instance has its own website with an overview, schedule, content pages, syllabus and information pages, generated from structured data files.</p>\n<p>Website: <a href=\"https://cryoem-sweden.github.io/sta-workshop-2026/\">https://cryoem-sweden.github.io/sta-workshop-2026/</a></p>",
   "creators": [
     {
       "name": "Luijten, Ineke",
@@ -35,7 +35,7 @@
   "language": "eng",
   "related_identifiers": [
     {
-      "identifier": "https://scilifelab-training.github.io/scilifelab-training-template/",
+      "identifier": "https://cryoem-sweden.github.io/sta-workshop-2026/",
       "relation": "isSupplementedBy",
       "resource_type": "other"
     }

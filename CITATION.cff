@@ -27,6 +27,6 @@ keywords:
 - FAIR
 - open educational resources
 license: CC-BY-4.0
-url: https://scilifelab-training.github.io/scilifelab-training-template/
-repository-code: https://github.com/SciLifeLab-Training/scilifelab-training-template
+url: https://cryoem-sweden.github.io/sta-workshop-2026/
+repository-code: https://github.com/cryoem-sweden/sta-workshop-2026
 version: 1.0.0-alpha

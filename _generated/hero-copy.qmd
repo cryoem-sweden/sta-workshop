@@ -1,5 +1,5 @@
 :::{.hero__title}
-Training title
+Cryo-ET and Subtomogram averaging Workshop 2026
 :::
 
 :::{.hero__subtitle}

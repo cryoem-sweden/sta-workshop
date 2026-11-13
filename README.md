@@ -140,7 +140,7 @@ with the template, not to the template itself.
 
 If you use this software, please cite it as:
 
-> Luijten, I.; Norgren, N.; Panouris, D. SciLifeLab Training Webpage Template. Version 1.0.0-alpha. https://scilifelab-training.github.io/scilifelab-training-template/
+> Luijten, I.; Norgren, N.; Panouris, D. SciLifeLab Training Webpage Template. Version 1.0.0-alpha. https://cryoem-sweden.github.io/sta-workshop-2026/
 
 Citation metadata is available in [CITATION.cff](CITATION.cff).
 <!-- /generated:citation -->
