@@ -20,7 +20,7 @@ website:
   # CITATION.cff and .zenodo.json describe your training, from
   # data/course.yml and data/team.yml.
 
-  template: true
+  template: false
 
   # ==================================================
   # Hero
