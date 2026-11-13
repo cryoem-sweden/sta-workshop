@@ -119,50 +119,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="course-content-page-shell">
 
-<div class="template-banner previous-instance-banner" data-instance="2612" hidden="">
-<p><strong>This is an older instance of this training.</strong> For the latest information, visit the newest training instance: <a href="#"><span data-current-label=""></span> →</a></p>
-</div>
-<script>
-(function () {
-  var banner = document.currentScript.previousElementSibling;
-  var slug = banner && banner.dataset.instance;
-  if (!slug || !window.fetch) {
-    return;
-  }
-
-  var path = window.location.pathname;
-  var position = path.indexOf("/" + slug + "/");
-  if (position < 0) {
-    return;
-  }
-
-  var root = window.location.origin + path.slice(0, position + 1);
-
-  fetch(root + "instances.json", { cache: "no-cache" })
-    .then(function (response) {
-      return response.ok ? response.json() : null;
-    })
-    .then(function (data) {
-      var instances = (data && data.instances) || [];
-      var self = instances.filter(function (item) {
-        return item.slug === slug;
-      })[0];
-      var current = instances.filter(function (item) {
-        return item.status === "current";
-      })[0];
-
-      if (!self || !current || self.status !== "previous") {
-        return;
-      }
-
-      var link = banner.querySelector("a");
-      link.href = new URL(current.url, root).href;
-      banner.querySelector("[data-current-label]").textContent = current.label;
-      banner.hidden = false;
-    })
-    .catch(function () {});
-})();
-</script>
 
 
     <div class="course-navbar">
@@ -173,7 +129,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
                 <div class="course-navbar-title">
 
-<h1>Training title</h1>
+<h1>Cryo-ET and Subtomogram averaging Workshop</h1>
 
                 </div>
 
@@ -997,7 +953,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </span>
 </a>
 </div>
-<div class="landing-footer"><div class="landing-footer__meta"><p>By Name of organizing institution and Add another organizing institution. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p><p>This website was built using the <a href="https://github.com/SciLifeLab-Training/scilifelab-training-template">SciLifeLab Training Webpage Template</a> and is hosted on GitHub Pages.</p></div><div class="landing-footer__actions"><a href="https://github.com/cryoem-sweden/sta-workshop" class="landing-footer__image-link"><img src="" data-course-asset="img/github-neg.png" alt="GitHub repository" class="landing-footer__image"></a></div></div>
+<div class="landing-footer"><div class="landing-footer__meta"><p>By SciLifeLab. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p><p>This website was built using the <a href="https://github.com/SciLifeLab-Training/scilifelab-training-template">SciLifeLab Training Webpage Template</a> and is hosted on GitHub Pages.</p></div><div class="landing-footer__actions"><a href="https://github.com/cryoem-sweden/sta-workshop" class="landing-footer__image-link"><img src="" data-course-asset="img/github-neg.png" alt="GitHub repository" class="landing-footer__image"></a></div></div>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

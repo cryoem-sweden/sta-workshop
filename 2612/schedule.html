@@ -91,56 +91,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="course-shell">
-<div class="template-banner previous-instance-banner" data-instance="2612" hidden="">
-<p><strong>This is an older instance of this training.</strong> For the latest information, visit the newest training instance: <a href="#"><span data-current-label=""></span> →</a></p>
-</div>
-<script>
-(function () {
-  var banner = document.currentScript.previousElementSibling;
-  var slug = banner && banner.dataset.instance;
-  if (!slug || !window.fetch) {
-    return;
-  }
-
-  var path = window.location.pathname;
-  var position = path.indexOf("/" + slug + "/");
-  if (position < 0) {
-    return;
-  }
-
-  var root = window.location.origin + path.slice(0, position + 1);
-
-  fetch(root + "instances.json", { cache: "no-cache" })
-    .then(function (response) {
-      return response.ok ? response.json() : null;
-    })
-    .then(function (data) {
-      var instances = (data && data.instances) || [];
-      var self = instances.filter(function (item) {
-        return item.slug === slug;
-      })[0];
-      var current = instances.filter(function (item) {
-        return item.status === "current";
-      })[0];
-
-      if (!self || !current || self.status !== "previous") {
-        return;
-      }
-
-      var link = banner.querySelector("a");
-      link.href = new URL(current.url, root).href;
-      banner.querySelector("[data-current-label]").textContent = current.label;
-      banner.hidden = false;
-    })
-    .catch(function () {});
-})();
-</script>
 <div class="course-navbar">
 <div class="course-navbar-layout">
 <div class="course-navbar-content">
 <div class="course-navbar-title">
 <h1>
-Training title
+Cryo-ET and Subtomogram averaging Workshop
 </h1>
 </div>
 <div class="course-navbar-menu">
@@ -193,8 +149,8 @@ document.addEventListener("DOMContentLoaded", function () {
 Schedule
 </h1>
 <div class="course-page-meta">
-<p><span class="course-welcome-item"> <i class="bi bi-calendar2-event"></i> 01 Jan 2026 – 02 Jan 2026 </span></p>
-<p><span class="course-welcome-item"> <i class="bi bi-geo-alt"></i> Venue name or online </span></p>
+<p><span class="course-welcome-item"> <i class="bi bi-calendar2-event"></i> 02 Dec 2026 – 04 Dec 2026 </span></p>
+<p><span class="course-welcome-item"> <i class="bi bi-geo-alt"></i> SciLifeLab Solna </span></p>
 </div>
 </div>
 <div class="course-schedule">
@@ -204,7 +160,7 @@ Schedule
 <p>Day 1</p>
 </div>
 <div class="course-schedule-day-date">
-<p>Wednesday, Sep 30</p>
+<p>Wednesday, Dec 2</p>
 </div>
 </button>
 <button type="button" class="course-schedule-day-link" data-day="day-2">
@@ -212,7 +168,7 @@ Schedule
 <p>Day 2</p>
 </div>
 <div class="course-schedule-day-date">
-<p>Thursday, Oct 1</p>
+<p>Thursday, Dec 3</p>
 </div>
 </button>
 <button type="button" class="course-schedule-day-link" data-day="day-3">
@@ -220,47 +176,31 @@ Schedule
 <p>Day 3</p>
 </div>
 <div class="course-schedule-day-date">
-<p>Friday, Oct 2</p>
-</div>
-</button>
-<button type="button" class="course-schedule-day-link" data-day="day-4">
-<div class="course-schedule-day-name">
-<p>Day 4</p>
-</div>
-<div class="course-schedule-day-date">
-<p>Sunday, Nov 1</p>
-</div>
-</button>
-<button type="button" class="course-schedule-day-link" data-day="follow-up">
-<div class="course-schedule-day-name">
-<p>Follow up</p>
-</div>
-<div class="course-schedule-day-date">
-<p>Thursday, Dec 3</p>
+<p>Friday, Dec 4</p>
 </div>
 </button>
 </div>
 <div class="course-schedule-timeline">
 <section id="day-1" class="course-schedule-day">
 <h2 class="course-schedule-day-heading">
-Day 1 – Wednesday, Sep 30
+Day 1 – Wednesday, Dec 2
 </h2>
-<div class="course-schedule-event course-type-lecture">
+<div class="course-schedule-event course-type-welcome">
 <div class="course-schedule-time">
-<p>09:00–09:45</p>
+<p>09:00–09:10</p>
 </div>
 <div class="course-schedule-details">
-<p><span class="course-upcoming-type course-type-lecture"> Lecture </span></p>
+<p><span class="course-upcoming-type course-type-welcome"> Welcome </span></p>
 <h3 class="course-schedule-title">
-<a href="content/module-1/introduction.html">How to structure a page</a>
+Welcome &amp; opening remarks
 </h3>
 <div class="course-schedule-speaker">
-<p>Jane Doe</p>
+<p>Organising committee</p>
 </div>
 </div>
 <div class="course-schedule-location-column">
 <div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> SciLifeLab Solna</p>
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
 </div>
 </div>
 </div>
@@ -269,20 +209,20 @@ Day 1 – Wednesday, Sep 30
 
 </div>
 <div class="course-schedule-time">
-<p>10:00–11:00</p>
+<p>09:10–10:30</p>
 </div>
 <div class="course-schedule-details">
 <p><span class="course-upcoming-type course-type-lecture"> Lecture </span></p>
 <h3 class="course-schedule-title">
-<a href="content/module-1/headings-and-text.html">Headings and text</a>
+nextPYP — Lecture
 </h3>
 <div class="course-schedule-speaker">
-<p>John Smith</p>
+<p>Alberto Bartesaghi</p>
 </div>
 </div>
 <div class="course-schedule-location-column">
 <div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> Lecture Hall A</p>
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
 </div>
 </div>
 </div>
@@ -291,16 +231,18 @@ Day 1 – Wednesday, Sep 30
 
 </div>
 <div class="course-schedule-time">
-<p>11:00–11:30</p>
+<p>10:30–11:00</p>
 </div>
 <div class="course-schedule-details">
 <p><span class="course-upcoming-type course-type-break"> Break </span></p>
 <h3 class="course-schedule-title">
-Coffee Break
+Coffee / tea break
 </h3>
 </div>
 <div class="course-schedule-location-column">
-
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
+</div>
 </div>
 </div>
 <div class="course-schedule-event course-type-practical">
@@ -308,20 +250,61 @@ Coffee Break
 
 </div>
 <div class="course-schedule-time">
-<p>11:30–13:00</p>
+<p>11:00–12:30</p>
 </div>
 <div class="course-schedule-details">
 <p><span class="course-upcoming-type course-type-practical"> Practical </span></p>
 <h3 class="course-schedule-title">
-<a href="content/module-1/lists-and-tables.html">Lists and tables</a>
+nextPYP — Practical
 </h3>
 <div class="course-schedule-speaker">
-<p>Jane Doe, Alex Johnson</p>
+<p>Alberto Bartesaghi</p>
 </div>
 </div>
 <div class="course-schedule-location-column">
 <div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> Computer Lab</p>
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-lunch">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>12:30–13:30</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-lunch"> Lunch </span></p>
+<h3 class="course-schedule-title">
+Lunch &amp; coffee / tea
+</h3>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Nanna Svartz</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-practical">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>13:30–15:30</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-practical"> Practical </span></p>
+<h3 class="course-schedule-title">
+nextPYP — Practical (cont.)
+</h3>
+<div class="course-schedule-speaker">
+<p>Alberto Bartesaghi</p>
+</div>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
 </div>
 </div>
 </div>
@@ -330,46 +313,46 @@ Coffee Break
 
 </div>
 <div class="course-schedule-time">
-<p>13:00–14:00</p>
+<p>15:30–16:00</p>
 </div>
 <div class="course-schedule-details">
 <p><span class="course-upcoming-type course-type-break"> Break </span></p>
 <h3 class="course-schedule-title">
-Lunch
+Coffee / tea &amp; cake
 </h3>
 </div>
 <div class="course-schedule-location-column">
 <div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> SciLifeLab Café</p>
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
 </div>
 </div>
 </div>
-<div class="course-schedule-event course-type-discussion">
+<div class="course-schedule-event course-type-practical">
 <div class="course-schedule-separator">
 
 </div>
 <div class="course-schedule-time">
-<p>14:00–15:00</p>
+<p>16:00–17:30</p>
 </div>
 <div class="course-schedule-details">
-<p><span class="course-upcoming-type course-type-discussion"> Discussion </span></p>
+<p><span class="course-upcoming-type course-type-practical"> Practical </span></p>
 <h3 class="course-schedule-title">
-<a href="content/module-1/other-content-elements.html">Other content elements</a>
+nextPYP — Practical (cont.)
 </h3>
 <div class="course-schedule-speaker">
-<p>John Smith</p>
+<p>Alberto Bartesaghi</p>
 </div>
 </div>
 <div class="course-schedule-location-column">
 <div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> Seminar Room 2</p>
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
 </div>
 </div>
 </div>
 </section>
 <section id="day-2" class="course-schedule-day">
 <h2 class="course-schedule-day-heading">
-Day 2 – Thursday, Oct 1
+Day 2 – Thursday, Dec 3
 </h2>
 <div class="course-schedule-event course-type-lecture">
 <div class="course-schedule-time">
@@ -378,15 +361,34 @@ Day 2 – Thursday, Oct 1
 <div class="course-schedule-details">
 <p><span class="course-upcoming-type course-type-lecture"> Lecture </span></p>
 <h3 class="course-schedule-title">
-<a href="content/module-2/introduction.html">How to highlight information</a>
+CryoET — Lecture
 </h3>
 <div class="course-schedule-speaker">
-<p>Maria Andersson</p>
+<p>Misha Kudryashev</p>
 </div>
 </div>
 <div class="course-schedule-location-column">
 <div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> Lecture Hall A</p>
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-break">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>10:30–11:00</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-break"> Break </span></p>
+<h3 class="course-schedule-title">
+Coffee / tea break
+</h3>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
 </div>
 </div>
 </div>
@@ -395,20 +397,181 @@ Day 2 – Thursday, Oct 1
 
 </div>
 <div class="course-schedule-time">
-<p>10:45–12:30</p>
+<p>11:00–12:30</p>
 </div>
 <div class="course-schedule-details">
 <p><span class="course-upcoming-type course-type-practical"> Practical </span></p>
 <h3 class="course-schedule-title">
-<a href="content/module-2/callout-boxes.html">Callout boxes</a>
+Tomobear2 — Practical
 </h3>
 <div class="course-schedule-speaker">
-<p>Maria Andersson, Alex Johnson</p>
+<p>Anna Berdichevskaia</p>
 </div>
 </div>
 <div class="course-schedule-location-column">
 <div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> Computer Lab</p>
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-lunch">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>12:30–13:30</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-lunch"> Lunch </span></p>
+<h3 class="course-schedule-title">
+Lunch &amp; coffee / tea
+</h3>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Nanna Svartz</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-practical">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>13:30–15:30</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-practical"> Practical </span></p>
+<h3 class="course-schedule-title">
+Tomobear2 — Lecture &amp; Practical
+</h3>
+<div class="course-schedule-speaker">
+<p>Misha Kudryashev, Anna Berdichevskaia</p>
+</div>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-break">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>15:30–15:45</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-break"> Break </span></p>
+<h3 class="course-schedule-title">
+Coffee / tea &amp; cake
+</h3>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-practical">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>15:45–16:45</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-practical"> Practical </span></p>
+<h3 class="course-schedule-title">
+Tomobear2 — Practical (cont.)
+</h3>
+<div class="course-schedule-speaker">
+<p>Anna Berdichevskaia</p>
+</div>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-break">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>16:45–19:00</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-break"> Break </span></p>
+<h3 class="course-schedule-title">
+Free time
+</h3>
+</div>
+<div class="course-schedule-location-column">
+
+</div>
+</div>
+<div class="course-schedule-event course-type-break">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>19:00–22:00</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-break"> Break </span></p>
+<h3 class="course-schedule-title">
+Course Dinner (for registered participants)
+</h3>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> The Queens Head, Drottninggatan 108</p>
+</div>
+</div>
+</div>
+</section>
+<section id="day-3" class="course-schedule-day">
+<h2 class="course-schedule-day-heading">
+Day 3 – Friday, Dec 4
+</h2>
+<div class="course-schedule-event course-type-seminar">
+<div class="course-schedule-time">
+<p>09:00–10:00</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-seminar"> Seminar </span></p>
+<h3 class="course-schedule-title">
+Scientific talk
+</h3>
+<div class="course-schedule-speaker">
+<p>Veijo T.V. Salo</p>
+</div>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-break">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>10:00–10:30</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-break"> Break </span></p>
+<h3 class="course-schedule-title">
+Coffee / tea break
+</h3>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
 </div>
 </div>
 </div>
@@ -417,40 +580,103 @@ Day 2 – Thursday, Oct 1
 
 </div>
 <div class="course-schedule-time">
-<p>14:00–15:00</p>
+<p>10:30–12:30</p>
 </div>
 <div class="course-schedule-details">
 <p><span class="course-upcoming-type course-type-discussion"> Discussion </span></p>
 <h3 class="course-schedule-title">
-<a href="content/module-2/collapsible-boxes.html">Collapsible callout boxes</a>
+Subtomogram averaging — Results from Tomobear2 &amp; Q&amp;A
 </h3>
 <div class="course-schedule-speaker">
-<p>Sarah Wilson</p>
+<p>Misha Kudryashev</p>
 </div>
 </div>
 <div class="course-schedule-location-column">
 <div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> Auditorium</p>
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
 </div>
 </div>
 </div>
-</section>
-<section id="day-3" class="course-schedule-day">
-<h2 class="course-schedule-day-heading">
-Day 3 – Friday, Oct 2
-</h2>
-<div class="course-schedule-event course-type-group-work">
+<div class="course-schedule-event course-type-lunch">
+<div class="course-schedule-separator">
+
+</div>
 <div class="course-schedule-time">
-<p>09:00–12:00</p>
+<p>12:30–13:30</p>
 </div>
 <div class="course-schedule-details">
-<p><span class="course-upcoming-type course-type-group-work"> Group-Work </span></p>
+<p><span class="course-upcoming-type course-type-lunch"> Lunch </span></p>
 <h3 class="course-schedule-title">
-<a href="content/module-3/introduction.html">How to add media and interactive elements</a>
+Lunch &amp; coffee / tea
 </h3>
 </div>
 <div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Nanna Svartz</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-practical">
+<div class="course-schedule-separator">
 
+</div>
+<div class="course-schedule-time">
+<p>13:30–15:30</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-practical"> Practical </span></p>
+<h3 class="course-schedule-title">
+Warp &amp; M — Practical (Zoom)
+</h3>
+<div class="course-schedule-speaker">
+<p>Dimitry Tegunov</p>
+</div>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-break">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>15:30–16:00</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-break"> Break </span></p>
+<h3 class="course-schedule-title">
+Coffee / tea &amp; cake
+</h3>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
+</div>
+</div>
+</div>
+<div class="course-schedule-event course-type-practical">
+<div class="course-schedule-separator">
+
+</div>
+<div class="course-schedule-time">
+<p>16:00–17:30</p>
+</div>
+<div class="course-schedule-details">
+<p><span class="course-upcoming-type course-type-practical"> Practical </span></p>
+<h3 class="course-schedule-title">
+Warp &amp; M — Practical (cont.) (Zoom)
+</h3>
+<div class="course-schedule-speaker">
+<p>Dimitry Tegunov</p>
+</div>
+</div>
+<div class="course-schedule-location-column">
+<div class="course-schedule-location">
+<p><i class="bi bi-geo-alt"></i> Air &amp; Fire</p>
+</div>
 </div>
 </div>
 <div class="course-schedule-event course-type-presentation">
@@ -458,88 +684,16 @@ Day 3 – Friday, Oct 2
 
 </div>
 <div class="course-schedule-time">
-<p>13:00–15:30</p>
+<p>17:30–18:00</p>
 </div>
 <div class="course-schedule-details">
 <p><span class="course-upcoming-type course-type-presentation"> Presentation </span></p>
 <h3 class="course-schedule-title">
-<a href="content/module-3/links.html">Links</a>
+Closing remarks
 </h3>
-<div class="course-schedule-speaker">
-<p>Jane Doe</p>
-</div>
 </div>
 <div class="course-schedule-location-column">
-<div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> Auditorium</p>
-</div>
-</div>
-</div>
-</section>
-<section id="day-4" class="course-schedule-day">
-<h2 class="course-schedule-day-heading">
-Day 4 – Sunday, Nov 1
-</h2>
-<div class="course-schedule-event course-type-workshop">
-<div class="course-schedule-time">
-<p>10:00–12:00</p>
-</div>
-<div class="course-schedule-details">
-<p><span class="course-upcoming-type course-type-workshop"> Workshop </span></p>
-<h3 class="course-schedule-title">
-<a href="content/module-3/images-presentations-videos.html">Images, presentations and videos</a>
-</h3>
-<div class="course-schedule-speaker">
-<p>John Smith</p>
-</div>
-</div>
-<div class="course-schedule-location-column">
-<div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> Online</p>
-</div>
-</div>
-</div>
-<div class="course-schedule-event course-type-assessment">
-<div class="course-schedule-separator">
 
-</div>
-<div class="course-schedule-time">
-<p>13:00–15:00</p>
-</div>
-<div class="course-schedule-details">
-<p><span class="course-upcoming-type course-type-assessment"> Assessment </span></p>
-<h3 class="course-schedule-title">
-Course Assessment
-</h3>
-</div>
-<div class="course-schedule-location-column">
-<div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> Online</p>
-</div>
-</div>
-</div>
-</section>
-<section id="follow-up" class="course-schedule-day">
-<h2 class="course-schedule-day-heading">
-Follow up – Thursday, Dec 3
-</h2>
-<div class="course-schedule-event course-type-consultation">
-<div class="course-schedule-time">
-<p>14:00–15:00</p>
-</div>
-<div class="course-schedule-details">
-<p><span class="course-upcoming-type course-type-consultation"> Consultation </span></p>
-<h3 class="course-schedule-title">
-Final Course Meeting
-</h3>
-<div class="course-schedule-speaker">
-<p>Jane Doe, Maria Andersson</p>
-</div>
-</div>
-<div class="course-schedule-location-column">
-<div class="course-schedule-location">
-<p><i class="bi bi-geo-alt"></i> SciLifeLab Solna</p>
-</div>
 </div>
 </div>
 </section>
@@ -548,7 +702,7 @@ Final Course Meeting
 <div class="landing-footer">
 <div class="landing-footer__meta">
 <p>
-By Name of organizing institution and Add another organizing institution. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+By SciLifeLab. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
 </p>
 <p>
 This website was built using the <a href="https://github.com/SciLifeLab-Training/scilifelab-training-template">SciLifeLab Training Webpage Template</a> and is hosted on GitHub Pages.

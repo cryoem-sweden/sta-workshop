@@ -90,56 +90,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="course-shell">
-<div class="template-banner previous-instance-banner" data-instance="2612" hidden="">
-<p><strong>This is an older instance of this training.</strong> For the latest information, visit the newest training instance: <a href="#"><span data-current-label=""></span> →</a></p>
-</div>
-<script>
-(function () {
-  var banner = document.currentScript.previousElementSibling;
-  var slug = banner && banner.dataset.instance;
-  if (!slug || !window.fetch) {
-    return;
-  }
-
-  var path = window.location.pathname;
-  var position = path.indexOf("/" + slug + "/");
-  if (position < 0) {
-    return;
-  }
-
-  var root = window.location.origin + path.slice(0, position + 1);
-
-  fetch(root + "instances.json", { cache: "no-cache" })
-    .then(function (response) {
-      return response.ok ? response.json() : null;
-    })
-    .then(function (data) {
-      var instances = (data && data.instances) || [];
-      var self = instances.filter(function (item) {
-        return item.slug === slug;
-      })[0];
-      var current = instances.filter(function (item) {
-        return item.status === "current";
-      })[0];
-
-      if (!self || !current || self.status !== "previous") {
-        return;
-      }
-
-      var link = banner.querySelector("a");
-      link.href = new URL(current.url, root).href;
-      banner.querySelector("[data-current-label]").textContent = current.label;
-      banner.hidden = false;
-    })
-    .catch(function () {});
-})();
-</script>
 <div class="course-navbar">
 <div class="course-navbar-layout">
 <div class="course-navbar-content">
 <div class="course-navbar-title">
 <h1>
-Training title
+Cryo-ET and Subtomogram averaging Workshop
 </h1>
 </div>
 <div class="course-navbar-menu">
@@ -210,7 +166,7 @@ Questions about the training?
 <p>
 Get in touch with the training team.
 </p>
-<p><a class="course-text-link" href="mailto:training@example.org">training@example.org</a></p>
+<p><a class="course-text-link" href="mailto:karin.wallden@scilifelab.se">karin.wallden@scilifelab.se</a></p>
 </div>
 </header>
 <section class="course-practicalities-section">
@@ -218,20 +174,20 @@ Get in touch with the training team.
 <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Venue
 </h2>
 <p>
-The training will take place at Venue Name in City.
+The training will take place at SciLifeLab in Solna.
 </p>
 <div class="course-practicalities-venue">
 <div class="course-practicalities-venue-details">
 <div>
 <strong>Address</strong>
 <div class="course-practicalities-address">
-Street address 00<br>000 00 City<br>Sweden<br>
+Tomtebodavägen 23<br>171 65 Solna<br>Sweden<br>
 </div>
 </div>
 <div>
 <strong>Room</strong>
 <div>
-Room name or number
+Air &amp; Fire
 </div>
 </div>
 <div>
@@ -255,126 +211,19 @@ Room name or number
 <i class="bi bi-bus-front-fill" aria-hidden="true"></i>Transport
 </h2>
 <p>
-Describe how participants can reach the venue using public transport. Include the nearest station, stop, or other useful information.
+The closest bus stops is Karolinska Institutet Biomedicum. Use the SL journey planner to find the best route from where you are staying.
 </p>
 <ul class="course-practicalities-links">
 <li>
-<a class="course-text-link" href="https://example.org" target="_blank" rel="noopener">Public transport website link</a>
-</li>
-<li>
-<a class="course-text-link" href="https://example.org" target="_blank" rel="noopener">Public transport app link</a>
+<a class="course-text-link" href="https://sl.se/en/in-english" target="_blank" rel="noopener">Public transport in Stockholm (SL)</a>
 </li>
 </ul>
-<p>
-Provide information about parking near the venue, including availability, restrictions, fees, payment methods, or any other information participants should know.
-</p>
-</section>
-<section class="course-practicalities-section">
-<h2>
-<i class="bi bi-building" aria-hidden="true"></i>Accommodation
-</h2>
-<p>
-Provide information about accommodation near the venue. You can list recommended hotels below, including their approximate distance and walking time from the venue.
-</p>
-<div class="course-practicalities-table-wrapper">
-
-<table class="course-practicalities-table">
-<thead>
-<tr>
-<th>
-Hotel
-</th>
-<th>
-Distance
-</th>
-<th>
-Walking time
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a class="course-text-link" href="https://example.org" target="_blank" rel="noopener">Hotel name</a>
-</td>
-<td>
-x meter
-</td>
-<td>
-x minutes
-</td>
-</tr>
-<tr>
-<td>
-Hotel name
-</td>
-<td>
-x km
-</td>
-<td>
-x min
-</td>
-</tr>
-</tbody>
-
-</table>
-</div>
-</section>
-<section class="course-practicalities-section">
-<h2>
-<i class="bi bi-cup-hot-fill" aria-hidden="true"></i>Food &amp; refreshments
-</h2>
-<p>
-Describe what food and refreshments are provided during the training, such as lunch, coffee, or other refreshments.
-</p>
-<p>
-Provide information about dietary requirements, allergies, or how participants should communicate special dietary needs.
-</p>
-</section>
-<section class="course-practicalities-section">
-<h2>
-<i class="bi bi-file-earmark-text-fill" aria-hidden="true"></i>Other information
-</h2>
-<div class="course-practicalities-additional">
-<div class="course-practicalities-additional-item">
-<h3>
-Example: What to bring
-</h3>
-<p>
-List anything participants should bring with them, such as a laptop, charger, identification, notebook, or other equipment.
-</p>
-</div>
-<div class="course-practicalities-additional-item">
-<h3>
-Example: Wi-Fi
-</h3>
-<p>
-Provide information about Wi-Fi access at the venue, including the network name and any instructions participants need to follow.
-</p>
-</div>
-<div class="course-practicalities-additional-item">
-<h3>
-Example: Accessibility
-</h3>
-<p>
-Provide information about accessibility at the venue and any arrangements participants should be aware of.
-</p>
-</div>
-<div class="course-practicalities-additional-item">
-<h3>
-Other information
-</h3>
-<p>
-Add any other practical information that participants should know before attending the training.
-</p>
-</div>
-</div>
 </section>
 </div>
 <div class="landing-footer">
 <div class="landing-footer__meta">
 <p>
-By Name of organizing institution and Add another organizing institution. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+By SciLifeLab. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
 </p>
 <p>
 This website was built using the <a href="https://github.com/SciLifeLab-Training/scilifelab-training-template">SciLifeLab Training Webpage Template</a> and is hosted on GitHub Pages.
