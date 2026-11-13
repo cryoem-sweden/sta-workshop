@@ -50,9 +50,8 @@ practicalities:
       Sweden
     room: "Air & Fire"
     instructions: >
-      Provide directions for finding the training room, including
-      the relevant entrance, floor, building, reception, or other
-      landmarks participants should know about.
+      The entrance is in the Delta building. Air & Fire is on the ground
+      floor.
     map_url: "https://www.openstreetmap.org/?mlat=59.350162&mlon=18.022383#map=19/59.350162/18.022383"
 
   # --------------------------------------------------
@@ -70,7 +69,7 @@ practicalities:
 
     links:
       - title: "Public transport in Stockholm (SL)"
-        url: "https://sl.se/en/in-english"
+        url: "https://sl.se"
     
     # parking: >
      # Provide information about parking near the venue, including
