@@ -1,2 +1,1 @@
 - [Go to the 2026 training](<./2612/>){.hero-cta .hero-cta--primary}
-- [Register now](<https://training.scilifelab.se/events/cryoelectron-tomography-and-subtomogram-averaging-workshop-2026>){.hero-cta .hero-cta--secondary}

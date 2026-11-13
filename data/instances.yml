@@ -90,7 +90,7 @@ instances:
     visible: true
     show_in_hero: true
     instance_url: "./2612/"
-    registration_url: "https://training.scilifelab.se/events/cryoelectron-tomography-and-subtomogram-averaging-workshop-2026"
+    registration_url: ""
     sort_key: 202612
 
   - slug: "2411"
