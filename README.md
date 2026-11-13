@@ -1,5 +1,5 @@
 <!-- generated:header -->
-# Training title
+# Cryo-ET and Subtomogram averaging Workshop
 
 [![Licence](https://img.shields.io/badge/licence-CC_BY_4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
 
@@ -20,7 +20,7 @@ instances of the training. Each `release-YYMM` branch holds one instance
 <!-- generated:course-information -->
 ## Training information
 
-- **Website:** <https://scilifelab-training.github.io/scilifelab-training-template/>
+- **Website:** <https://cryoem-sweden.github.io/sta-workshop/>
 - **Target audience:** Describe the intended participant group
 - **Language:** English
 <!-- /generated:course-information -->
@@ -49,12 +49,14 @@ of each instance are on its own `release-YYMM` branch.
 <!-- generated:contributors -->
 ## Contributors
 
-| Name | Role | ORCID | Affiliation |
-|------|------|-------|-------------|
-| Firstname1 Lastname1 | Founder |  | Institution or organisation |
-| Firstname2 Lastname2 | Founder |  | Institution or organisation |
-| Firstname3 Lastname3 | Contributor |  | Institution or organisation |
-| Firstname4 Lastname4 | Contributor |  | Institution or organisation |
+| Name | Role | Author | ORCID | Affiliation |
+|------|------|--------|-------|-------------|
+| Firstname1 Lastname1 | Founder | Yes |  | Institution or organisation |
+| Firstname2 Lastname2 | Founder | Yes |  | Institution or organisation |
+| Firstname3 Lastname3 | Contributor | Yes |  | Institution or organisation |
+| Firstname4 Lastname4 | Contributor | Yes |  | Institution or organisation |
+
+Only authors are credited in the [citation](#citation), and as creators on Zenodo.
 <!-- /generated:contributors -->
 
 ## Contributing
@@ -73,7 +75,7 @@ materials of a training instance.
 
 If you use these materials, please cite them as:
 
-> Lastname1, F.; Lastname2, F.; Lastname3, F.; Lastname4, F. Training title. https://scilifelab-training.github.io/scilifelab-training-template/
+> Lastname1, F.; Lastname2, F.; Lastname3, F.; Lastname4, F. Cryo-ET and Subtomogram averaging Workshop. https://cryoem-sweden.github.io/sta-workshop/
 
 Citation metadata is available in [CITATION.cff](CITATION.cff).
 <!-- /generated:citation -->
