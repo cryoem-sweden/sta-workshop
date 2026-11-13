@@ -74,16 +74,17 @@ course:
   #
   # Basic information about the training.
 
-  title: "Training title"
-  subtitle: "Short subtitle describing the training."
+  title: "Cryo-ET and Subtomogram averaging Workshop"
+  subtitle: ""
   description: >
-    Provide a short description of the training, including its main
-    topic, purpose, or focus.
+      The focus of the workshop is to provide training in some of the most recent developments of CryoET and STA data processing using for instance **nextPYP**, **TomoBEAR**, **Warp/M**, taught by the developers themselves.
 
-  credits:
-    value: numerical value
-    unit: "hp/ECTS"
-    note: "E.g: specify whether formal approval of credits is determined by the participant's host university."
+      The workshop provides hands-on training in CryoET and STA encompassing all stages of the pipeline.
+
+  #credits:
+   # value: numerical value
+   # unit: "hp/ECTS"
+   # note: "E.g: specify whether formal approval of credits is determined by the participant's host university."
 
   # --------------------------------------------------
   # Delivery
@@ -94,24 +95,24 @@ course:
   #
   # Replace the placeholder dates with the actual training dates.
   # Dates must use ISO format: YYYY-MM-DD.
-  start_date: "2026-01-01"
-  end_date: "2026-01-02"
+  start_date: "2026-12-02"
+  end_date: "2026-12-04"
 
-  duration: "Number of days"
-  mode: "Online / In-person / Hybrid"
+  duration: "3 days"
+  mode: "In-person"
   instruction:
-    - "Describe the main teaching format or activity, e.g. Self-study"
-    - "Add another teaching format or activity, e.g. Online lectures"
-    - "Add another teaching format or activity, e.g. In-person workshop"
+    - "Lectures by the software developers"
+    - "Hands-on data processing tutorials"
+    - "Discussion and Q&A sessions with the developers"
     
   # Location is required. For a self-paced or online training, 
   # set location: "Online" instead of leaving it empty
-  location: "Venue name or online"
+  location: "SciLifeLab Solna"
 
   # The language of the training, e.g. "English" or "Swedish".
   # For other languages, use the three-letter code from
   # https://iso639-3.sil.org (e.g. "ita" for Italian).
-  language: "Language the training is provided in"
+  language: "Language the training is provided in English"
 
   # --------------------------------------------------
   # Educational information
@@ -121,26 +122,31 @@ course:
   # participants need to know beforehand, and what they
   # should learn from the training.
 
-  target_audience: "Describe the intended participant group"
-  expertise_level: "Beginner / Intermediate / Advanced"
+  target_audience: "PhD students, postdocs and researchers who want to learn cryo-ET data processing and subtomogram averaging"
+  expertise_level: "Beginner"
 
   prerequisites:
     knowledge:
-      - "Describe a required knowledge prerequisite"
-      - "Add another knowledge prerequisite"
+      - "Participants will be selected on the basis of applications that describe their current research projects and plans."
+      - "Priority will be given to participants that are currently doing cryoET and are users of the SciLifeLab cryo-EM facilities."
     technical:
-      - "Describe a required technical prerequisite"
-      - "Add another technical prerequisite"
+      - "Participants are required to bring their own laptops with mouse to the workshop."
 
   learning_outcomes:
-    - "Add a learning outcome"
-    - "Add another learning outcome"
-    - "Add another learning outcome"
+    - "Alignment and reconstruction of tilt series"
+    - "Manual and automated particle picking"
+    - "Archiving and cataloguing of tilt series, tomograms and annotations"
+    - "Creation of subtomogram averaging projects"
+    - "Advanced tools in subtomogram averaging"
+    - "Classification methods"
+    - "Creation of 3D maps"
 
   keywords:
-    - "Keyword 1"
-    - "Keyword 2"
-    - "Keyword 3"
+    - "Cryo-electron tomography"
+    - "Subtomogram averaging"
+    - "Tomogram reconstruction"
+    - "Particle picking"
+    - "Structural biology"
 
   # --------------------------------------------------
   # Examination and assessment
@@ -152,9 +158,7 @@ course:
 
   examination:
     description: >
-      Describe how participants will be assessed, if applicable.
-      Remove or leave this field empty if the training does not
-      include an examination or other assessment.
+      none
 
   # --------------------------------------------------
   # Administration
@@ -162,19 +166,18 @@ course:
   #
   # Organisations responsible for organising the training
   organizers:
-    - "Name of organizing institution"
-    - "Add another organizing institution"
+    - "SciLifeLab"
 
   # Organisations providing educational content, if applicable. 
   content_providers:
-    - "Name of institution providing content"
-    - "Name of another institution providing content"
+    - "CryoNet"
+    - "Stockholm University"
 
   # Organisations funding the training, if applicable. 
-  funding:
-    - funder: "Name of funding organisation"
-      grant_number: ""
-      grant_title: ""
+  # funding:
+    # - funder: "Name of funding organisation"
+     # grant_number: ""
+     # grant_title: ""
   
   # --------------------------------------------------
   # Contact
@@ -183,7 +186,7 @@ course:
   # Main contact address for questions about the training.
 
   contact:
-    email: "training@example.org"
+    email: "karin.wallden@scilifelab.se"
 
   # --------------------------------------------------
   # Reuse, citation and DOI

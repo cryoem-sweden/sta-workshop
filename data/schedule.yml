@@ -81,163 +81,420 @@ events:
 
 
   # ------------------------------------------------------------------
-  # DAY 1
+  # DAY 1 - Wednesday, 2 December 2026
   # ------------------------------------------------------------------
 
-  - title: "How to structure a page"
+  - title: "Welcome & opening remarks"
+    type: welcome
+    group: "Day 1"
+    start: 2026-12-02T09:00:00
+    end: 2026-12-02T09:10:00
+    location: "Air & Fire"
+    people:
+      - Organising committee
+    content: ""
+
+  - title: "nextPYP — Lecture"
     type: lecture
     group: "Day 1"
-    start: 2026-09-30T09:00:00
-    end: 2026-09-30T09:45:00
-    location: "SciLifeLab Solna"
+    start: 2026-12-02T09:10:00
+    end: 2026-12-02T10:30:00
+    location: "Air & Fire"
     people:
-      - Jane Doe
-    content: content/module-1/introduction.qmd
+      - Alberto Bartesaghi
+    content: ""
 
-  - title: "Headings and text"
-    type: lecture
-    group: "Day 1"
-    start: 2026-09-30T10:00:00
-    end: 2026-09-30T11:00:00
-    location: "Lecture Hall A"
-    people:
-      - John Smith
-    content: content/module-1/headings-and-text.qmd
-
-  - title: "Coffee Break"
+  - title: "Coffee / tea break"
     type: break
     group: "Day 1"
-    start: 2026-09-30T11:00:00
-    end: 2026-09-30T11:30:00
+    start: 2026-12-02T10:30:00
+    end: 2026-12-02T11:00:00
+    location: "Air & Fire"
+    people: []
+    content: ""
+
+  - title: "nextPYP — Practical"
+    type: practical
+    group: "Day 1"
+    start: 2026-12-02T11:00:00
+    end: 2026-12-02T12:30:00
+    location: "Air & Fire"
+    people:
+      - Alberto Bartesaghi
+    content: ""
+
+  - title: "Lunch & coffee / tea"
+    type: lunch
+    group: "Day 1"
+    start: 2026-12-02T12:30:00
+    end: 2026-12-02T13:30:00
+    location: "Nanna Svartz"
+    people: []
+    content: ""
+
+  - title: "nextPYP — Practical (cont.)"
+    type: practical
+    group: "Day 1"
+    start: 2026-12-02T13:30:00
+    end: 2026-12-02T15:30:00
+    location: "Air & Fire"
+    people:
+      - Alberto Bartesaghi
+    content: ""
+
+  - title: "Coffee / tea & cake"
+    type: break
+    group: "Day 1"
+    start: 2026-12-02T15:30:00
+    end: 2026-12-02T16:00:00
+    location: "Air & Fire"
+    people: []
+    content: ""
+
+  - title: "nextPYP — Practical (cont.)"
+    type: practical
+    group: "Day 1"
+    start: 2026-12-02T16:00:00
+    # TODO: end time is not in the program draft; 17:30 is assumed.
+    end: 2026-12-02T17:30:00
+    location: "Air & Fire"
+    people:
+      - Alberto Bartesaghi
+    content: ""
+
+
+  # ------------------------------------------------------------------
+  # DAY 2 - Thursday, 3 December 2026
+  # ------------------------------------------------------------------
+
+  - title: "CryoET — Lecture"
+    type: lecture
+    group: "Day 2"
+    start: 2026-12-03T09:00:00
+    end: 2026-12-03T10:30:00
+    location: "Air & Fire"
+    people:
+      - Misha Kudryashev
+    content: ""
+
+  - title: "Coffee / tea break"
+    type: break
+    group: "Day 2"
+    start: 2026-12-03T10:30:00
+    end: 2026-12-03T11:00:00
+    location: "Air & Fire"
+    people: []
+    content: ""
+
+  - title: "Tomobear2 — Practical"
+    type: practical
+    group: "Day 2"
+    start: 2026-12-03T11:00:00
+    end: 2026-12-03T12:30:00
+    location: "Air & Fire"
+    people:
+      - Anna Berdichevskaia
+    content: ""
+
+  - title: "Lunch & coffee / tea"
+    type: lunch
+    group: "Day 2"
+    start: 2026-12-03T12:30:00
+    end: 2026-12-03T13:30:00
+    location: "Nanna Svartz"
+    people: []
+    content: ""
+
+  - title: "Tomobear2 — Lecture & Practical"
+    type: practical
+    group: "Day 2"
+    start: 2026-12-03T13:30:00
+    end: 2026-12-03T15:30:00
+    location: "Air & Fire"
+    people:
+      - Misha Kudryashev
+      - Anna Berdichevskaia
+    content: ""
+
+  - title: "Coffee / tea & cake"
+    type: break
+    group: "Day 2"
+    start: 2026-12-03T15:30:00
+    end: 2026-12-03T15:45:00
+    location: "Air & Fire"
+    people: []
+    content: ""
+
+  - title: "Tomobear2 — Practical (cont.)"
+    type: practical
+    group: "Day 2"
+    start: 2026-12-03T15:45:00
+    end: 2026-12-03T16:45:00
+    location: "Air & Fire"
+    people:
+      - Anna Berdichevskaia
+    content: ""
+
+  - title: "Free time"
+    type: break
+    group: "Day 2"
+    start: 2026-12-03T16:45:00
+    end: 2026-12-03T19:00:00
     location: ""
     people: []
     content: ""
 
-  - title: "Lists and tables"
-    type: practical
-    group: "Day 1"
-    start: 2026-09-30T11:30:00
-    end: 2026-09-30T13:00:00
-    location: "Computer Lab"
-    people:
-      - Jane Doe
-      - Alex Johnson
-    content: content/module-1/lists-and-tables.qmd
-
-  - title: "Lunch"
+  - title: "Course Dinner (for registered participants)"
     type: break
-    group: "Day 1"
-    start: 2026-09-30T13:00:00
-    end: 2026-09-30T14:00:00
-    location: "SciLifeLab Café"
+    group: "Day 2"
+    start: 2026-12-03T19:00:00
+    # TODO: end time is not in the program draft; 22:00 is assumed.
+    end: 2026-12-03T22:00:00
+    location: "The Queens Head, Drottninggatan 108"
     people: []
     content: ""
 
-  - title: "Other content elements"
-    type: discussion
-    group: "Day 1"
-    start: 2026-09-30T14:00:00
-    end: 2026-09-30T15:00:00
-    location: "Seminar Room 2"
-    people:
-      - John Smith
-    content: content/module-1/other-content-elements.qmd
-
 
   # ------------------------------------------------------------------
-  # DAY 2
+  # DAY 3 - Friday, 4 December 2026
   # ------------------------------------------------------------------
 
-  - title: "How to highlight information"
-    type: lecture
-    group: "Day 2"
-    start: 2026-10-01T09:00:00
-    end: 2026-10-01T10:30:00
-    location: "Lecture Hall A"
-    people:
-      - Maria Andersson
-    content: content/module-2/introduction.qmd
-
-  - title: "Callout boxes"
-    type: practical
-    group: "Day 2"
-    start: 2026-10-01T10:45:00
-    end: 2026-10-01T12:30:00
-    location: "Computer Lab"
-    people:
-      - Maria Andersson
-      - Alex Johnson
-    content: content/module-2/callout-boxes.qmd
-
-  - title: "Collapsible callout boxes"
-    type: discussion
-    group: "Day 2"
-    start: 2026-10-01T14:00:00
-    end: 2026-10-01T15:00:00
-    location: "Auditorium"
-    people:
-      - Sarah Wilson
-    content: content/module-2/collapsible-boxes.qmd
-
-
-  # ------------------------------------------------------------------
-  # DAY 3
-  # ------------------------------------------------------------------
-
-  - title: "How to add media and interactive elements"
-    type: group-work
+  - title: "Scientific talk"
+    type: seminar
     group: "Day 3"
-    start: 2026-10-02T09:00:00
-    end: 2026-10-02T12:00:00
-    location: ""
-    people: []
-    content: content/module-3/introduction.qmd
+    start: 2026-12-04T09:00:00
+    end: 2026-12-04T10:00:00
+    location: "Air & Fire"
+    people:
+      - Veijo T.V. Salo
+    content: ""
 
-  - title: "Links"
+  - title: "Coffee / tea break"
+    type: break
+    group: "Day 3"
+    start: 2026-12-04T10:00:00
+    end: 2026-12-04T10:30:00
+    location: "Air & Fire"
+    people: []
+    content: ""
+
+  - title: "Subtomogram averaging — Results from Tomobear2 & Q&A"
+    type: discussion
+    group: "Day 3"
+    start: 2026-12-04T10:30:00
+    end: 2026-12-04T12:30:00
+    location: "Air & Fire"
+    people:
+      - Misha Kudryashev
+    content: ""
+
+  - title: "Lunch & coffee / tea"
+    type: lunch
+    group: "Day 3"
+    start: 2026-12-04T12:30:00
+    end: 2026-12-04T13:30:00
+    location: "Nanna Svartz"
+    people: []
+    content: ""
+
+  - title: "Warp & M — Practical (Zoom)"
+    type: practical
+    group: "Day 3"
+    start: 2026-12-04T13:30:00
+    end: 2026-12-04T15:30:00
+    location: "Air & Fire"
+    people:
+      - Dimitry Tegunov
+    content: ""
+
+  - title: "Coffee / tea & cake"
+    type: break
+    group: "Day 3"
+    start: 2026-12-04T15:30:00
+    end: 2026-12-04T16:00:00
+    location: "Air & Fire"
+    people: []
+    content: ""
+
+  - title: "Warp & M — Practical (cont.) (Zoom)"
+    type: practical
+    group: "Day 3"
+    start: 2026-12-04T16:00:00
+    end: 2026-12-04T17:30:00
+    location: "Air & Fire"
+    people:
+      - Dimitry Tegunov
+    content: ""
+
+  - title: "Closing remarks"
     type: presentation
     group: "Day 3"
-    start: 2026-10-02T13:00:00
-    end: 2026-10-02T15:30:00
-    location: "Auditorium"
-    people:
-      - Jane Doe
-    content: content/module-3/links.qmd
-
-
-  # ------------------------------------------------------------------
-  # LATER IN THE FUTURE
-  # ------------------------------------------------------------------
-
-  - title: "Images, presentations and videos"
-    type: workshop
-    group: "Day 4"
-    start: 2026-11-01T10:00:00
-    end: 2026-11-01T12:00:00
-    location: "Online"
-    people:
-      - John Smith
-    content: content/module-3/images-presentations-videos.qmd
-
-  - title: "Course Assessment"
-    type: assessment
-    group: "Day 4"
-    start: 2026-11-01T13:00:00
-    end: 2026-11-01T15:00:00
-    location: "Online"
+    start: 2026-12-04T17:30:00
+    # TODO: end time is not in the program draft; 17:45 is assumed.
+    end: 2026-12-04T18:00:00
+    location: ""
     people: []
     content: ""
 
-  # ------------------------------------------------------------------
-  # FINAL MEETING
-  # ------------------------------------------------------------------
 
-  - title: "Final Course Meeting"
-    type: consultation
-    group: "Follow up"
-    start: 2026-12-03T14:00:00
-    end: 2026-12-03T15:00:00
-    location: "SciLifeLab Solna"
-    people:
-      - Jane Doe
-      - Maria Andersson
-    content: ""
+  # # ------------------------------------------------------------------
+  # # DAY 1
+  # # ------------------------------------------------------------------
+
+  # - title: "How to structure a page"
+  #   type: lecture
+  #   group: "Day 1"
+  #   start: 2026-09-30T09:00:00
+  #   end: 2026-09-30T09:45:00
+  #   location: "SciLifeLab Solna"
+  #   people:
+  #     - Jane Doe
+  #   content: content/module-1/introduction.qmd
+
+  # - title: "Headings and text"
+  #   type: lecture
+  #   group: "Day 1"
+  #   start: 2026-09-30T10:00:00
+  #   end: 2026-09-30T11:00:00
+  #   location: "Lecture Hall A"
+  #   people:
+  #     - John Smith
+  #   content: content/module-1/headings-and-text.qmd
+
+  # - title: "Coffee Break"
+  #   type: break
+  #   group: "Day 1"
+  #   start: 2026-09-30T11:00:00
+  #   end: 2026-09-30T11:30:00
+  #   location: ""
+  #   people: []
+  #   content: ""
+
+  # - title: "Lists and tables"
+  #   type: practical
+  #   group: "Day 1"
+  #   start: 2026-09-30T11:30:00
+  #   end: 2026-09-30T13:00:00
+  #   location: "Computer Lab"
+  #   people:
+  #     - Jane Doe
+  #     - Alex Johnson
+  #   content: content/module-1/lists-and-tables.qmd
+
+  # - title: "Lunch"
+  #   type: break
+  #   group: "Day 1"
+  #   start: 2026-09-30T13:00:00
+  #   end: 2026-09-30T14:00:00
+  #   location: "SciLifeLab Café"
+  #   people: []
+  #   content: ""
+
+  # - title: "Other content elements"
+  #   type: discussion
+  #   group: "Day 1"
+  #   start: 2026-09-30T14:00:00
+  #   end: 2026-09-30T15:00:00
+  #   location: "Seminar Room 2"
+  #   people:
+  #     - John Smith
+  #   content: content/module-1/other-content-elements.qmd
+
+
+  # # ------------------------------------------------------------------
+  # # DAY 2
+  # # ------------------------------------------------------------------
+
+  # - title: "How to highlight information"
+  #   type: lecture
+  #   group: "Day 2"
+  #   start: 2026-10-01T09:00:00
+  #   end: 2026-10-01T10:30:00
+  #   location: "Lecture Hall A"
+  #   people:
+  #     - Maria Andersson
+  #   content: content/module-2/introduction.qmd
+
+  # - title: "Callout boxes"
+  #   type: practical
+  #   group: "Day 2"
+  #   start: 2026-10-01T10:45:00
+  #   end: 2026-10-01T12:30:00
+  #   location: "Computer Lab"
+  #   people:
+  #     - Maria Andersson
+  #     - Alex Johnson
+  #   content: content/module-2/callout-boxes.qmd
+
+  # - title: "Collapsible callout boxes"
+  #   type: discussion
+  #   group: "Day 2"
+  #   start: 2026-10-01T14:00:00
+  #   end: 2026-10-01T15:00:00
+  #   location: "Auditorium"
+  #   people:
+  #     - Sarah Wilson
+  #   content: content/module-2/collapsible-boxes.qmd
+
+
+  # # ------------------------------------------------------------------
+  # # DAY 3
+  # # ------------------------------------------------------------------
+
+  # - title: "How to add media and interactive elements"
+  #   type: group-work
+  #   group: "Day 3"
+  #   start: 2026-10-02T09:00:00
+  #   end: 2026-10-02T12:00:00
+  #   location: ""
+  #   people: []
+  #   content: content/module-3/introduction.qmd
+
+  # - title: "Links"
+  #   type: presentation
+  #   group: "Day 3"
+  #   start: 2026-10-02T13:00:00
+  #   end: 2026-10-02T15:30:00
+  #   location: "Auditorium"
+  #   people:
+  #     - Jane Doe
+  #   content: content/module-3/links.qmd
+
+
+  # # ------------------------------------------------------------------
+  # # LATER IN THE FUTURE
+  # # ------------------------------------------------------------------
+
+  # - title: "Images, presentations and videos"
+  #   type: workshop
+  #   group: "Day 4"
+  #   start: 2026-11-01T10:00:00
+  #   end: 2026-11-01T12:00:00
+  #   location: "Online"
+  #   people:
+  #     - John Smith
+  #   content: content/module-3/images-presentations-videos.qmd
+
+  # - title: "Course Assessment"
+  #   type: assessment
+  #   group: "Day 4"
+  #   start: 2026-11-01T13:00:00
+  #   end: 2026-11-01T15:00:00
+  #   location: "Online"
+  #   people: []
+  #   content: ""
+
+  # # ------------------------------------------------------------------
+  # # FINAL MEETING
+  # # ------------------------------------------------------------------
+
+  # - title: "Final Course Meeting"
+  #   type: consultation
+  #   group: "Follow up"
+  #   start: 2026-12-03T14:00:00
+  #   end: 2026-12-03T15:00:00
+  #   location: "SciLifeLab Solna"
+  #   people:
+  #     - Jane Doe
+  #     - Maria Andersson
+  #   content: ""

@@ -20,7 +20,7 @@ website:
   # Set this to false when you create your first training instance:
   # the banner disappears.
 
-  template: true
+  template: false
 
   # ==================================================
   # Banner for older instances
@@ -39,7 +39,7 @@ website:
   # false: never show it, for example for a self-paced version that
   # stays valid.
 
-  previous_instance_banner: true
+  previous_instance_banner: false
 
   # ==================================================
   # Navbar
@@ -113,12 +113,10 @@ website:
 
   welcome:
 
-    title: "Welcome to the training"
+    title: "Welcome to the workshop"
 
     text: >
-      Use this section to introduce the training. Briefly describe
-      what participants will learn, what they can expect, and what
-      they will find on this website.
+      The focus of the workshop is to provide training in some of the most recent developments of CryoET and STA data processing using for instance nextPYP, TomoBEAR, Warp/M, taught by the developers themselves.
 
     image:
       # Replace with the path to the welcome image.
@@ -160,7 +158,7 @@ website:
     # Set "enabled" to true to show the registration banner.
     # Set it to false if the training does not have registration
     # information or if you do not want to show it.
-    enabled: true
+    enabled: false
 
     opening_date: "2026-01-01"
     closing_date: "2026-12-31"

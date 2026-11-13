@@ -2,29 +2,50 @@
 # Validate with: cffconvert --validate
 cff-version: 1.2.0
 message: If you use or reuse these training materials, please cite them as below.
-title: Training title
-abstract: Provide a short description of the training, including its main topic, purpose, or focus.
+title: Cryo-ET and Subtomogram averaging Workshop
+abstract: The focus of the workshop is to provide training in some of the most recent developments of CryoET and STA data processing using for instance nextPYP, TomoBEAR, Warp/M, taught by the developers themselves. The workshop provides hands-on training in CryoET and STA encompassing all stages of the pipeline.
 authors:
-- family-names: Lastname1
-  given-names: Firstname1
-  affiliation: Institution or organisation
-  orcid: https://orcid.org/0000-0000-0000-0000
-- family-names: Lastname2
-  given-names: Firstname2
-  affiliation: Institution or organisation
-- family-names: Lastname3
-  given-names: Firstname3
-  affiliation: Institution or organisation
+- family-names: Walldén
+  given-names: Karin
+  affiliation: Stockholm University
+- family-names: Carroni
+  given-names: Marta
+  affiliation: Stockholm University
+- family-names: Coincon
+  given-names: Mathieu
+  affiliation: Stockholm University
+- family-names: Timpert
+  given-names: Gerrit
+  affiliation: Stockholm University
+- family-names: Azinas
+  given-names: Stavros
+  affiliation: Stockholm University
+- family-names: Bartesaghi
+  given-names: Alberto
+  affiliation: Duke University, Durham, NC, USA
+- family-names: Kudryashev
+  given-names: Misha
+  affiliation: Max Delbrück Center for Molecular Medicine in the Helmholtz Association, Berlin
+- family-names: Berdichevskaia
+  given-names: Anna
+  affiliation: Helmholtz Zentrum München
+- family-names: Tegunov
+  given-names: Dimitry
+  affiliation: Genentech, South San Francisco, California
+- family-names: Salo
+  given-names: Veijo T. V.
+  affiliation: Karolinska Institutet
 contact:
-- family-names: Lastname1
-  given-names: Firstname1
-  affiliation: Institution or organisation
-  orcid: https://orcid.org/0000-0000-0000-0000
-  email: training.lead@example.org
+- family-names: Walldén
+  given-names: Karin
+  affiliation: Stockholm University
+  email: karin.wallden@scilifelab.se
 keywords:
-- Keyword 1
-- Keyword 2
-- Keyword 3
+- Cryo-electron tomography
+- Subtomogram averaging
+- Tomogram reconstruction
+- Particle picking
+- Structural biology
 license: CC-BY-4.0
 url: https://cryoem-sweden.github.io/sta-workshop/2612/
 repository-code: https://github.com/cryoem-sweden/sta-workshop

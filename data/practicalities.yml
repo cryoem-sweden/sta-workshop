@@ -43,12 +43,12 @@ practicalities:
       # 5. Paste the URL below.
 
   venue:
-    name: "Venue Name"
+    name: "SciLifeLab"
     address: |
-      Street address 00
-      000 00 City
+      Tomtebodavägen 23
+      171 65 Solna
       Sweden
-    room: "Room name or number"
+    room: "Air & Fire"
     instructions: >
       Provide directions for finding the training room, including
       the relevant entrance, floor, building, reception, or other
@@ -63,20 +63,19 @@ practicalities:
 
   transport:
     description: >
-      Describe how participants can reach the venue using public
-      transport. Include the nearest station, stop, or other useful
-      information.
+      The closest bus stops is Karolinska Institutet Biomedicum.
+      Use the SL journey planner to find the best
+      route from where you are staying.
+
 
     links:
-      - title: "Public transport website link"
-        url: "https://example.org"
-      - title: "Public transport app link"
-        url: "https://example.org"
+      - title: "Public transport in Stockholm (SL)"
+        url: "https://sl.se/en/in-english"
     
-    parking: >
-      Provide information about parking near the venue, including
-      availability, restrictions, fees, payment methods, or any
-      other information participants should know.
+    # parking: >
+     # Provide information about parking near the venue, including
+     # availability, restrictions, fees, payment methods, or any
+     # other information participants should know.
 
   # --------------------------------------------------
   # Accommodation
@@ -85,21 +84,21 @@ practicalities:
   # Add one entry for each hotel or other accommodation option.
   # Leave "url" empty if no website link should be displayed.
 
-  accommodation:
-    description: >
-      Provide information about accommodation near the venue.
-      You can list recommended hotels below, including their
-      approximate distance and walking time from the venue.
-    hotels:
-      - name: "Hotel name"
-        distance: "x meter"
-        walking_time: "x minutes"
-        url: "https://example.org"
+  # accommodation:
+  #   description: >
+  #     Provide information about accommodation near the venue.
+  #     You can list recommended hotels below, including their
+  #     approximate distance and walking time from the venue.
+  #   hotels:
+  #     - name: "Hotel name"
+  #       distance: "x meter"
+  #       walking_time: "x minutes"
+  #       url: "https://example.org"
 
-      - name: "Hotel name"
-        distance: "x km"
-        walking_time: "x min"
-        url: ""
+  #     - name: "Hotel name"
+  #       distance: "x km"
+  #       walking_time: "x min"
+  #       url: ""
 
   # --------------------------------------------------
   # Food
@@ -108,14 +107,14 @@ practicalities:
   # Information about meals and refreshments provided during
   # the training, as well as dietary requirements.
 
-  food:
-    description: >
-      Describe what food and refreshments are provided during the
-      training, such as lunch, coffee, or other refreshments.
+  # food:
+  #   description: >
+  #     Describe what food and refreshments are provided during the
+  #     training, such as lunch, coffee, or other refreshments.
 
-    dietary_information: >
-      Provide information about dietary requirements, allergies,
-      or how participants should communicate special dietary needs.
+  #   dietary_information: >
+  #     Provide information about dietary requirements, allergies,
+  #     or how participants should communicate special dietary needs.
 
 
   # --------------------------------------------------
@@ -125,23 +124,23 @@ practicalities:
   # Practical information that does not fit naturally into the sections above.
   # Add, remove, or rename entries as needed.
 
-  additional:
-    - title: "Example: What to bring"
-      content: >
-        List anything participants should bring with them, such as
-        a laptop, charger, identification, notebook, or other equipment.
+  # additional:
+  #   - title: "Example: What to bring"
+  #     content: >
+  #       List anything participants should bring with them, such as
+  #       a laptop, charger, identification, notebook, or other equipment.
 
-    - title: "Example: Wi-Fi"
-      content: >
-        Provide information about Wi-Fi access at the venue, including
-        the network name and any instructions participants need to follow.
+  #   - title: "Example: Wi-Fi"
+  #     content: >
+  #       Provide information about Wi-Fi access at the venue, including
+  #       the network name and any instructions participants need to follow.
 
-    - title: "Example: Accessibility"
-      content: >
-        Provide information about accessibility at the venue and any
-        arrangements participants should be aware of.
+  #   - title: "Example: Accessibility"
+  #     content: >
+  #       Provide information about accessibility at the venue and any
+  #       arrangements participants should be aware of.
 
-    - title: "Other information"
-      content: >
-        Add any other practical information that participants should
-        know before attending the training.
+  #   - title: "Other information"
+  #     content: >
+  #       Add any other practical information that participants should
+  #       know before attending the training.

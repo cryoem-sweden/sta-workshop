@@ -93,44 +93,41 @@ team:
     # preview, followed by instructors if fewer than two
     # training leads are available.
 
-    - given_names: "Firstname1"
-      family_names: "Lastname1"
+    - given_names: "Karin"
+      family_names: "Walldén"
       roles:
         - Training lead
-      job_title: "Job Title"
-      affiliation: "Institution or organisation"
-      email: "training.lead@example.org"
-      # Set course_contact to true if participants should be able to identify this person as a course contact.
+      affiliation: "Stockholm University"
+      email: "karin.wallden@scilifelab.se"
       course_contact: true
-      bio: >
-        Provide a 1-to-2-sentence biography describing this person's
-        expertise, role in the training, and relevant experience.
-      # Optional profile links. Leave empty if not applicable.
-      orcid: "https://orcid.org/0000-0000-0000-0000"
-      linkedin: "https://www.linkedin.com/in/example"
-      github: ""
-      website: ""
-      image: "img/photos/team-photo.jpeg"
-      citation_author: true
 
-    # Add another training lead if applicable.
-    - given_names: "Firstname2"
-      family_names: "Lastname2"
+    - given_names: "Marta"
+      family_names: "Carroni"
       roles:
         - Training lead
-      job_title: "Job Title"
-      affiliation: "Institution or organisation"
-      email: ""
-      course_contact: false
-      bio: >
-        Provide a 1-to-2-sentence biography describing this person's
-        expertise, role in the training, and relevant experience.
-      orcid: ""
-      linkedin: ""
-      github: "https://github.com/example"
-      website: "https://example.org"
-      image: "img/photos/team-photo.jpeg"
-      citation_author: true
+      affiliation: "Stockholm University"
+      email: "marta.carroni@scilifelab.se"
+
+    - given_names: "Mathieu"
+      family_names: "Coincon"
+      roles:
+        - Training lead
+      affiliation: "Stockholm University"
+      email: "mathieu.coincon@scilifelab.se"
+
+    - given_names: "Gerrit"
+      family_names: "Timpert"
+      roles:
+        - Training lead
+      affiliation: "Stockholm University"
+      email: "gerrit.timpert@scilifelab.se"
+
+    - given_names: "Stavros"
+      family_names: "Azinas"
+      roles:
+        - Training lead
+      affiliation: "Stockholm University"
+      email: "stavros.azinas@scilifelab.se"
 
     # --------------------------------------------------
     # Instructors
@@ -142,23 +139,35 @@ team:
     # Use the role "Instructor" to place a person in the
     # instructor section of the full Team page.
 
-    - given_names: "Firstname3"
-      family_names: "Lastname3"
+    - given_names: "Alberto"
+      family_names: "Bartesaghi"
       roles:
         - Instructor
-      job_title: "Job Title"
-      affiliation: "Institution or organisation"
-      email: "instructor@example.org"
-      course_contact: false
-      bio: >
-        Provide a 1-to-2-sentence biography describing this person's
-        expertise, role in the training, and relevant experience.
-      orcid: ""
-      linkedin: "https://www.linkedin.com/in/example"
-      github: ""
-      website: ""
-      image: "img/photos/team-photo.jpeg"
-      citation_author: true
+      affiliation: "Duke University, Durham, NC, USA"
+
+    - given_names: "Misha"
+      family_names: "Kudryashev"
+      roles:
+        - Instructor
+      affiliation: "Max Delbrück Center for Molecular Medicine in the Helmholtz Association, Berlin"
+
+    - given_names: "Anna"
+      family_names: "Berdichevskaia"
+      roles:
+        - Instructor
+      affiliation: "Helmholtz Zentrum München"
+
+    - given_names: "Dimitry"
+      family_names: "Tegunov"
+      roles:
+        - Instructor
+      affiliation: "Genentech, South San Francisco, California"
+
+    - given_names: "Veijo T. V."
+      family_names: "Salo"
+      roles:
+        - Instructor
+      affiliation: "Karolinska Institutet"
 
     # Add another instructor if applicable.
 
@@ -173,38 +182,38 @@ team:
     # Use the role "Contributor" to place a person in the
     # contributor section of the full Team page.
 
-    - given_names: "Firstname4"
-      family_names: "Lastname4"
-      roles:
-        - Contributor
-      job_title: "Job Title"
-      affiliation: "Institution or organisation"
-      email: ""
-      course_contact: false
-      bio: >
-        Provide a 1-to-2-sentence biography describing this person's
-        expertise, role in the training, and relevant experience.
-      orcid: "https://orcid.org/0000-0000-0000-0000"
-      linkedin: ""
-      github: "https://github.com/example"
-      website: ""
-      image: "img/photos/team-photo.jpeg"
-      citation_author: false
+    # - given_names: "Firstname4"
+    #   family_names: "Lastname4"
+    #   roles:
+    #     - Contributor
+    #   job_title: "Job Title"
+    #   affiliation: "Institution or organisation"
+    #   email: ""
+    #   course_contact: false
+    #   bio: >
+    #     Provide a 1-to-2-sentence biography describing this person's
+    #     expertise, role in the training, and relevant experience.
+    #   orcid: "https://orcid.org/0000-0000-0000-0000"
+    #   linkedin: ""
+    #   github: "https://github.com/example"
+    #   website: ""
+    #   image: "img/photos/team-photo.jpeg"
+    #   citation_author: false
 
-    # Add another contributor if applicable.
+    # # Add another contributor if applicable.
     
-    - given_names: "Firstname5"
-      family_names: "Lastname5"
-      roles:
-        - Contributor
-      job_title: ""
-      affiliation: "Institution or organisation"
-      email: "contributor@example.org"
-      course_contact: false
-      bio: ""
-      orcid: ""
-      linkedin: ""
-      github: ""
-      website: "https://example.org"
-      image: ""
-      citation_author: false
+    # - given_names: "Firstname5"
+    #   family_names: "Lastname5"
+    #   roles:
+    #     - Contributor
+    #   job_title: ""
+    #   affiliation: "Institution or organisation"
+    #   email: "contributor@example.org"
+    #   course_contact: false
+    #   bio: ""
+    #   orcid: ""
+    #   linkedin: ""
+    #   github: ""
+    #   website: "https://example.org"
+    #   image: ""
+    #   citation_author: false

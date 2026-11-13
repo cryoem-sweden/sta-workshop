@@ -1,39 +1,55 @@
 {
-  "title": "Training title",
+  "title": "Cryo-ET and Subtomogram averaging Workshop",
   "upload_type": "lesson",
-  "description": "<p>Provide a short description of the training, including its main topic, purpose, or focus.</p>\n<p>Training dates: 2026-01-01 – 2026-01-02.</p>\n<p>Training website: <a href=\"https://cryoem-sweden.github.io/sta-workshop/2612/\">https://cryoem-sweden.github.io/sta-workshop/2612/</a></p>\n<p>Funded by: Name of funding organisation.</p>",
+  "description": "<p>The focus of the workshop is to provide training in some of the most recent developments of CryoET and STA data processing using for instance nextPYP, TomoBEAR, Warp/M, taught by the developers themselves. The workshop provides hands-on training in CryoET and STA encompassing all stages of the pipeline.</p>\n<p>Training dates: 2026-12-02 – 2026-12-04.</p>\n<p>Training website: <a href=\"https://cryoem-sweden.github.io/sta-workshop/2612/\">https://cryoem-sweden.github.io/sta-workshop/2612/</a></p>",
   "creators": [
     {
-      "name": "Lastname1, Firstname1",
-      "affiliation": "Institution or organisation",
-      "orcid": "0000-0000-0000-0000"
+      "name": "Walldén, Karin",
+      "affiliation": "Stockholm University"
     },
     {
-      "name": "Lastname2, Firstname2",
-      "affiliation": "Institution or organisation"
+      "name": "Carroni, Marta",
+      "affiliation": "Stockholm University"
     },
     {
-      "name": "Lastname3, Firstname3",
-      "affiliation": "Institution or organisation"
-    }
-  ],
-  "contributors": [
-    {
-      "name": "Lastname4, Firstname4",
-      "affiliation": "Institution or organisation",
-      "orcid": "0000-0000-0000-0000",
-      "type": "ProjectMember"
+      "name": "Coincon, Mathieu",
+      "affiliation": "Stockholm University"
     },
     {
-      "name": "Lastname5, Firstname5",
-      "affiliation": "Institution or organisation",
-      "type": "ProjectMember"
+      "name": "Timpert, Gerrit",
+      "affiliation": "Stockholm University"
+    },
+    {
+      "name": "Azinas, Stavros",
+      "affiliation": "Stockholm University"
+    },
+    {
+      "name": "Bartesaghi, Alberto",
+      "affiliation": "Duke University, Durham, NC, USA"
+    },
+    {
+      "name": "Kudryashev, Misha",
+      "affiliation": "Max Delbrück Center for Molecular Medicine in the Helmholtz Association, Berlin"
+    },
+    {
+      "name": "Berdichevskaia, Anna",
+      "affiliation": "Helmholtz Zentrum München"
+    },
+    {
+      "name": "Tegunov, Dimitry",
+      "affiliation": "Genentech, South San Francisco, California"
+    },
+    {
+      "name": "Salo, Veijo T. V.",
+      "affiliation": "Karolinska Institutet"
     }
   ],
   "keywords": [
-    "Keyword 1",
-    "Keyword 2",
-    "Keyword 3"
+    "Cryo-electron tomography",
+    "Subtomogram averaging",
+    "Tomogram reconstruction",
+    "Particle picking",
+    "Structural biology"
   ],
   "license": "cc-by-4.0",
   "access_right": "open",
