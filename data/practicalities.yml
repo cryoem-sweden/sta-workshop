@@ -45,7 +45,7 @@ practicalities:
   venue:
     name: "SciLifeLab"
     address: |
-      Tomtebodavägen 23
+      Tomtebodavägen 23A
       171 65 Solna
       Sweden
     room: "Air & Fire"
@@ -62,7 +62,7 @@ practicalities:
 
   transport:
     description: >
-      The closest bus stops is Karolinska Institutet Biomedicum.
+      The closest bus stop is Karolinska Institutet Biomedicum.
       Use the SL journey planner to find the best
       route from where you are staying.
 
