@@ -120,9 +120,9 @@ website:
 
     image:
       # Replace with the path to the welcome image.
-      src: "img/welcome-graphic-placeholder.svg"
+      src: "img/welcome-graphic-cryoet.svg"
       # Describe the image for accessibility.
-      alt: "Welcome illustration"
+      alt: "Cryo-ET workflow: a tilt series, a tomogram with picked particles on a membrane, subtomograms in different orientations, and the averaged structure"
 
 
   # ==================================================

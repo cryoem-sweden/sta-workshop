@@ -25,7 +25,7 @@ website.
 - **Location:** SciLifeLab Solna
 - **Target audience:** PhD students, postdocs and researchers who want to learn cryo-ET data processing and subtomogram averaging
 - **Expertise level:** Beginner
-- **Language:** Language the training is provided in English
+- **Language:** English
 - **Version:** 2612
 <!-- /generated:course-information -->
 
@@ -76,7 +76,7 @@ preparation and setup, with notes for each module.
 |------|------|--------|-------|-------------|
 | Karin Walldén | Training lead | Yes |  | Stockholm University |
 | Marta Carroni | Training lead | Yes |  | Stockholm University |
-| Mathieu Coincon | Training lead | Yes |  | Stockholm University |
+| Mathieu Coinçon | Training lead | Yes |  | Stockholm University |
 | Gerrit Timpert | Training lead | Yes |  | Stockholm University |
 | Stavros Azinas | Training lead | Yes |  | Stockholm University |
 | Alberto Bartesaghi | Instructor | Yes |  | Duke University, Durham, NC, USA |
@@ -104,7 +104,7 @@ report a problem or suggest a change.
 
 If you use these materials, please cite them as:
 
-> Walldén, K.; Carroni, M.; Coincon, M.; Timpert, G.; Azinas, S.; Bartesaghi, A.; Kudryashev, M.; Berdichevskaia, A.; Tegunov, D.; Salo, V. T. V. Cryo-ET and Subtomogram averaging Workshop. Version 2612. https://cryoem-sweden.github.io/sta-workshop/2612/
+> Walldén, K.; Carroni, M.; Coinçon, M.; Timpert, G.; Azinas, S.; Bartesaghi, A.; Kudryashev, M.; Berdichevskaia, A.; Tegunov, D.; Salo, V. T. V. Cryo-ET and Subtomogram averaging Workshop. Version 2612. https://cryoem-sweden.github.io/sta-workshop/2612/
 
 Citation metadata is available in [CITATION.cff](CITATION.cff).
 <!-- /generated:citation -->

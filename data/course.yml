@@ -112,7 +112,7 @@ course:
   # The language of the training, e.g. "English" or "Swedish".
   # For other languages, use the three-letter code from
   # https://iso639-3.sil.org (e.g. "ita" for Italian).
-  language: "Language the training is provided in English"
+  language: "English"
 
   # --------------------------------------------------
   # Educational information

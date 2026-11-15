@@ -12,7 +12,7 @@
       "affiliation": "Stockholm University"
     },
     {
-      "name": "Coincon, Mathieu",
+      "name": "Coinçon, Mathieu",
       "affiliation": "Stockholm University"
     },
     {
@@ -54,6 +54,7 @@
   "license": "cc-by-4.0",
   "access_right": "open",
   "version": "2612",
+  "language": "eng",
   "related_identifiers": [
     {
       "identifier": "https://cryoem-sweden.github.io/sta-workshop/2612/",
