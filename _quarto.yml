@@ -12,8 +12,10 @@ project:
     - practicalities.qmd
     - resources.qmd
     - preparation.qmd
+    - setup-guide.qmd
     - faq.qmd
     - announcements.qmd
+    
 
   pre-render:
     - python scripts/render_course.py

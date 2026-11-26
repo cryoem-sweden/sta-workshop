@@ -29,8 +29,9 @@ preparation:
   # --------------------------------------------------
 
   intro: >
-    Use this page to provide participants with the accounts, software, hardware,
-    reading, and other information they need before attending the training.
+    The practical sessions run on the SciLifeLab cryo-EM cluster. You use your
+    own laptop to log in to the cluster and to look at the results. Please
+    install the programs below before the course.
 
   # --------------------------------------------------
   # Sections
@@ -52,17 +53,13 @@ preparation:
 
       blocks:
 
-        - type: text
-          content: |
-            Use the `checklist` block type to provide participants with a simple overview of the preparation tasks they need to complete before the training. Add one item for each required or recommended activity.
-
         - type: checklist
-          title: "Preparation checklist"
+          title: "Before the course"
           items:
-            - "Complete preparation task 1"
-            - "Complete preparation task 2"
-            - "Complete preparation task 3"
-            - "Complete preparation task 4"
+            - "Windows: install MobaXterm. macOS and Linux: nothing to install for the cluster."
+            - "Install ChimeraX 1.12 with ArtiaX and check that ArtiaX starts."
+            - "Install 3dmod and open the test file golgi.mrc."
+            - "Bring your laptop and its charger."
 
 
     # --------------------------------------------------
@@ -76,54 +73,16 @@ preparation:
 
       blocks:
 
-        - type: text
-          content: |
-            Describe the accounts participants need to create or access before the training. Use the `account` block type for each account and provide a description, instructions, and relevant links.
-
         - type: account
-          title: "Account 1"
+          title: "Cluster account"
 
           description: >
-            Briefly explain what the account is, why participants
-            need it, and how it will be used during the training.
+            You work in groups. Each group gets an account on the cluster.
 
           instructions: |
-            Provide the steps participants should follow to create
-            or configure the account.
+            You get the user name and password at the start of the course.
+            You do not need to create an account before.
 
-            1. Create account step 1. 
-            2. Create account step 2. 
-            3. Create account step 3. 
-
-          links:
-            - title: "Account registration link"
-              url: "https://example.org"
-
-            - title: "Account documentation link"
-              url: "https://example.org"
-
-        - type: account
-          title: "Account 2"
-
-          description: >
-            Add additional account requirements as separate `account` blocks.
-            Consecutive account blocks are automatically displayed in a grid.
-
-          instructions: |
-            Provide the steps participants should follow to create
-            or configure this account.
-
-          links:
-            - title: "Create account link"
-              url: "https://example.org"
-
-
-        - type: callout
-          style: important
-          title: "This is an important callout"
-          content: >
-            Use an **important** callout to highlight information that participants
-            should be particularly aware of before completing the preparation activity.
 
 
     # --------------------------------------------------
@@ -138,63 +97,138 @@ preparation:
 
       blocks:
 
-        - type: text
-          content: |
-           List the software participants need before the training. Use the `software` block type for each application and include any relevant installation instructions and links.
         - type: software
-          title: "Software 1"
+          title: "Cluster access"
 
           description: >
-            Briefly describe the software and explain why participants
-            need it. Include version or operating-system requirements
-            if applicable.
+            One program for logging in to the cluster and for copying
+            files to your laptop.
 
           instructions: |
-            Provide the installation or configuration steps here.            
-            1. Install software step 1.
-            2. Install software step 2.
-            3. Install software step 3.
+            **macOS and Linux:** nothing to install. Use the Terminal:
+            `ssh` to log in, `scp` to copy files.
+
+            **Windows:** install MobaXterm (free Home Edition). It logs in
+            with SSH and shows the cluster's files in a sidebar, where you
+            can download them.
 
           links:
-            - title: "Software download link"
-              url: "https://example.org"
-
-            - title: "Software documentation link"
-              url: "https://example.org"
+            - title: "MobaXterm (Home Edition) download"
+              url: "https://mobaxterm.mobatek.net/download.html"
+           
+            - title: "Step-by-step guide with screenshots"
+              url: "setup-guide.html"
 
         - type: software
-          title: "Software 2"
+          title: "ChimeraX with ArtiaX"
 
           description: >
-            Add additional software requirements as separate `software` blocks.
-            Consecutive software blocks are automatically displayed in a grid.
+            To look at tomograms, membranes and particle picks in 3D.
 
           instructions: |
-            Provide the installation or configuration steps here.
+            1. Install ChimeraX 1.12.
+            2. Install the ArtiaX plugin from the ChimeraX Toolshed.
 
           links:
-            - title: "Software download link"
-              url: "https://example.org"
+            - title: "ChimeraX download"
+              url: "https://www.cgl.ucsf.edu/chimerax/download.html"
+
+            - title: "ArtiaX"
+              url: "https://github.com/FrangakisLab/ArtiaX"
+
+            - title: "Step-by-step guide with screenshots"
+              url: "setup-guide.html"
 
         - type: software
-          title: "Software 3"
+          title: "3dmod (from IMOD)"
 
           description: >
-            Add another software requirement here.
+            To look at tilt series, tomograms and particle picks.
+            Version 5.x.
 
           instructions: |
-             Provide the installation or configuration steps here.
+            Windows: the standalone 3dmod is enough. macOS and Linux:
+            install IMOD 5.x. See the step-by-step guide.
 
           links:
-            - title: ""
-              url: ""
+            - title: "3dmod for Windows"
+              url: "https://bio3d.colorado.edu/ftp/Windows3dmod/"
+
+            - title: "IMOD for macOS and Linux"
+              url: "https://bio3d.colorado.edu/imod/download.html"
+            
+            - title: "Step-by-step guide with screenshots"
+              url: "setup-guide.html"
 
         - type: callout
-          style: warning
-          title: "This is a warning callout"
+          style: note
+          title: "Problems with the installation?"
           content: >
-            Use a **warning** callout for information about a potential problem,
-            limitation, or action that participants should not overlook.
+            Contact Gerrit Timpert (gerrit.timpert@scilifelab.se). If needed,
+            we can also solve it together in a short Zoom call before the
+            course.
+
+
+
+      # blocks:
+
+      #   - type: text
+      #     content: |
+      #      List the software participants need before the training. Use the `software` block type for each application and include any relevant installation instructions and links.
+      #   - type: software
+      #     title: "Software 1"
+
+      #     description: >
+      #       Briefly describe the software and explain why participants
+      #       need it. Include version or operating-system requirements
+      #       if applicable.
+
+      #     instructions: |
+      #       Provide the installation or configuration steps here.            
+      #       1. Install software step 1.
+      #       2. Install software step 2.
+      #       3. Install software step 3.
+
+      #     links:
+      #       - title: "Software download link"
+      #         url: "https://example.org"
+
+      #       - title: "Software documentation link"
+      #         url: "https://example.org"
+
+      #   - type: software
+      #     title: "Software 2"
+
+      #     description: >
+      #       Add additional software requirements as separate `software` blocks.
+      #       Consecutive software blocks are automatically displayed in a grid.
+
+      #     instructions: |
+      #       Provide the installation or configuration steps here.
+
+      #     links:
+      #       - title: "Software download link"
+      #         url: "https://example.org"
+
+      #   - type: software
+      #     title: "Software 3"
+
+      #     description: >
+      #       Add another software requirement here.
+
+      #     instructions: |
+      #        Provide the installation or configuration steps here.
+
+      #     links:
+      #       - title: ""
+      #         url: ""
+
+      #   - type: callout
+      #     style: warning
+      #     title: "This is a warning callout"
+      #     content: >
+      #       Use a **warning** callout for information about a potential problem,
+      #       limitation, or action that participants should not overlook.
 
 
     # --------------------------------------------------
@@ -209,111 +243,9 @@ preparation:
 
       blocks:
 
-        - type: text
-          content: |
-             Describe the computer or other equipment participants need to bring or have access to. Use the `hardware` block type to specify requirements such as RAM, storage, processor, or internet connection.
-
         - type: hardware
-          title: "Hardware 1"
+          title: "Laptop"
 
           description: >
-            Describe the equipment participants need and include
-            any minimum technical requirements.
-
-          requirements:
-            - label: "RAM"
-              value: "Minimum requirement"
-
-            - label: "Storage"
-              value: "Minimum requirement"
-
-            - label: "Processor"
-              value: "Requirement"
-
-            - label: "Internet"
-              value: "Requirement"
-
-          instructions: |
-            Provide any additional information participants should know,
-            such as whether they need to bring their own computer,
-            charger, headset, or other equipment.
-
-
-        - type: callout
-          style: note
-          title: "This is a note callout"
-          content: >
-            Use a **note** callout for useful background information, tips,
-            reminders, or other information that does not require the
-            stronger emphasis of an **important** or **warning** callout.
-
-
-    # --------------------------------------------------
-    # SECTION 5: Required reading
-    # --------------------------------------------------
-    #
-    # Use this section for articles, documentation, or other
-    # material participants should review before the training.
-    
-
-    - title: "Required reading"
-
-      blocks:
-
-        - type: text
-          content: |
-             Provide reading materials that participants should review before the training. Use the `reading` block type for each reading resource.
-
-        - type: reading
-          title: "Reading 1"
-
-          description: >
-             Briefly describe the reading and explain what participants
-             should get from it. Adding a URL to a citation will
-             make it clickable for easy access.
-
-          citations:
-            - text: >
-                Example Author or Organisation. (year). Example document title.
-              url: "https://example.org"
-
-            - text: >
-                Another Author or Organisation. (year). Another document title.
-              url: "https://example.org/article"
-
-          instructions: |
-            Explain how participants should approach the reading.
-            For example, indicate whether they should read the full
-            document or focus on particular sections.
-
-          prompt: >
-            Add a question or reflection prompt if participants should
-            think about something before the training.
-
-        - type: reading
-          title: "Reading 2"
-
-          description: >
-             Add another required reading resource here.
-
-          citations:
-            - text: >
-                Example Author or Organisation. (year). Example document title.
-              url: ""
-  
-
-    # --------------------------------------------------
-    # SECTION 6: Additional information
-    # --------------------------------------------------
-    #
-    # Use this section for preparation information that does
-    # not fit naturally into the other categories.
-    
-
-    - title: "Additional information"
-
-      blocks:
-
-        - type: text
-          content: |
-            Use this section for other information participants should know before the training, such as local IT requirements, administrative permissions, accessibility information, or other preparation details.
+            Bring your own laptop (Windows, macOS or Linux) on which you
+            can install software. All computing runs on the cluster.

@@ -1,4 +1,4 @@
-# announcements:
+announcements:
 
 # OPTIONAL 
 
@@ -58,3 +58,12 @@
   #     text: >
   #       Provide a short update or important information
   #       for participants.
+
+    items:
+
+    - date: 2026-11-26
+      title: "Prepare your laptop"
+      text: >
+        Please install ChimeraX with ArtiaX and 3dmod before the course.
+        See the <a href="preparation.html">Preparation</a> page and the
+        <a href="setup-guide.html">laptop setup guide</a>.

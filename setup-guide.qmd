@@ -1,0 +1,207 @@
+---
+title: Laptop setup guide
+title-block: false
+---
+
+::: {.course-shell}
+
+{{< include _sections/navbar.qmd >}}
+
+# Laptop setup guide
+
+Please install the following programs on your laptop before the course:
+
+- a program to log in to the cluster and copy files (Windows only, see below)
+- ChimeraX 1.12 with the ArtiaX plugin
+- 3dmod, the viewer from IMOD
+
+You need a laptop on which you can install software. Choose your operating
+system below.
+
+::: {.callout-note}
+## Problems with the installation?
+
+Contact Gerrit Timpert at
+[gerrit.timpert@scilifelab.se](mailto:gerrit.timpert@scilifelab.se).
+If needed, we can also solve it together in a short Zoom call before the
+course.
+:::
+
+::: {.panel-tabset}
+
+## Windows
+
+### 1. MobaXterm (cluster login and files)
+
+MobaXterm logs in to the cluster and shows the cluster's files in a sidebar,
+where you can download them. The free Home Edition is enough.
+
+1. Open the [MobaXterm download page](https://mobaxterm.mobatek.net/download.html)
+   and click **Download now** under **Home Edition**.
+
+   ![](img/setup/win-moba-download.webp){width=700}
+
+2. Click **Installer edition**.
+
+   ![](img/setup/win-moba-edition.webp){width=700}
+
+3. Unzip the downloaded file and run the installer in it with the default
+   settings.
+
+4. Start MobaXterm and click **Session**.
+
+   ![](img/setup/win-moba-start.webp){width=700}
+
+5. Click **SSH**.
+
+   ![](img/setup/win-moba-session-type.png){width=700}
+
+6. Enter `login.cryoem.se` as **Remote host** and your course user name as
+   **Username**. Click **OK**.
+
+   ![](img/setup/win-moba-ssh-settings.png){width=700}
+
+7. The first time you connect, MobaXterm asks whether you trust the server.
+   Click **Accept**.
+
+   ![](img/setup/win-moba-hostkey.png){width=500}
+
+8. Type your password and press Enter. The password is not shown while you
+   type.
+
+   ![](img/setup/win-moba-password.webp){width=700}
+
+9. After the login, the sidebar on the left shows your files on the cluster.
+   To copy a file to your laptop, right-click it and choose **Download**.
+
+   ![](img/setup/win-moba-sftp-download.webp){width=700}
+
+MobaXterm saves the session in the sidebar. Next time, double-click it to
+log in again.
+
+### 2. ChimeraX 1.12 with ArtiaX
+
+1. Open the [ChimeraX download page](https://www.cgl.ucsf.edu/chimerax/download.html).
+   Under the heading **ChimeraX 1.12**, click `ChimeraX-1.12.exe`.
+   Do not take the release candidate or the daily build at the top of the
+   page: ArtiaX does not work with them.
+
+   ![](img/setup/win-chimerax-download.webp){width=700}
+
+2. Run the installer with the default settings.
+
+3. Start ChimeraX. Click into the field next to **Command:** at the bottom of
+   the window, type `toolshed install ArtiaX` and press Enter. The log shows
+   "Installed ChimeraX-ArtiaX".
+
+   ![](img/setup/win-chimerax-artiax-install.webp){width=700}
+
+4. In the same field, type `pip install pandas==3.0.5` and press Enter. The
+   log shows no message for this command. That is normal.
+
+   ![](img/setup/win-chimerax-pandas.webp){width=700}
+
+   ::: {.callout-note}
+   ## Why this step?
+
+   The current ArtiaX release installs a pandas version that does not work
+   with ChimeraX 1.12, so ArtiaX does not start. This step installs a version
+   that works.
+   :::
+
+5. Quit ChimeraX (**File**, **Quit**) and start it again.
+
+6. Click the **ArtiaX** tab at the top, then **Launch**.
+
+   ![](img/setup/win-chimerax-artiax-tab.webp){width=700}
+
+7. The ArtiaX panel opens. ChimeraX and ArtiaX are ready.
+
+   ![](img/setup/win-chimerax-artiax-open.webp){width=700}
+
+### 3. 3dmod
+
+::: {.callout-important}
+## Already have IMOD?
+
+If the full IMOD is already installed on your laptop, the standalone 3dmod
+does not start. Use the 3dmod from your IMOD installation and skip this part.
+:::
+
+On Windows you only need 3dmod, not the full IMOD. 3dmod is available as a
+standalone package.
+
+1. Open the [3dmod download folder](https://bio3d.colorado.edu/ftp/Windows3dmod/)
+   and click `3dmodForWin64-5.2.7.exe`.
+
+   ![](img/setup/win-3dmod-download.png){width=600}
+
+2. Double-click the downloaded file. Keep the destination folder
+   `C:\Program Files` and click **Extract**.
+
+   ![](img/setup/win-3dmod-extract.png){width=600}
+
+   If Windows shows a blue warning, click **More info** and then
+   **Run anyway**. If Windows asks for administrator rights, right-click the
+   file and choose **Run as administrator**.
+
+3. Open the folder `C:\Program Files\3dmod`.
+
+   ![](img/setup/win-3dmod-folder.png){width=700}
+
+4. Right-click **3dmod** and choose **Send to**, **Desktop (create shortcut)**.
+   On Windows 11, you may first have to click **Show more options**.
+
+   ![](img/setup/win-3dmod-shortcut.webp){width=700}
+
+5. Start 3dmod from the desktop shortcut. In the window "3dmod Startup",
+   click **Select...** next to **Image file(s)**, choose a file and click
+   **OK**.
+
+   ![](img/setup/win-3dmod-startup.webp){width=700}
+
+6. To test it, download
+   [golgi.mrc](https://bio3d.colorado.edu/ftp/Windows3dmod/golgi.mrc) and
+   open it. 3dmod shows the image, and its info window shows "3dmod 5.2.7".
+
+   ![](img/setup/win-3dmod-open.webp){width=700}
+
+## macOS
+
+Instructions for macOS follow soon.
+
+## Linux
+
+### 1. Cluster login and files
+
+Nothing to install. In a terminal, use `ssh` to log in and `scp` to copy
+files:
+
+```bash
+ssh <user>@login.cryoem.se
+```
+
+```bash
+scp <user>@login.cryoem.se:<path on the cluster> .
+```
+
+### 2. ChimeraX 1.12 with ArtiaX
+
+1. Download ChimeraX 1.12 for your distribution from the
+   [ChimeraX download page](https://www.cgl.ucsf.edu/chimerax/download.html)
+   (heading **ChimeraX 1.12**, under **Other platforms**) and install it.
+2. Follow steps 3 to 7 of the Windows instructions: `toolshed install ArtiaX`,
+   then `pip install pandas==3.0.5`, restart ChimeraX, then **ArtiaX**,
+   **Launch**.
+
+### 3. IMOD
+
+Install IMOD 5.x with the installer for Linux from the
+[IMOD download page](https://bio3d.colorado.edu/imod/download.html) and
+follow its instructions. Afterwards, open a new terminal and run `3dmod`.
+
+:::
+
+{{< include _sections/footer.qmd >}}
+
+:::
