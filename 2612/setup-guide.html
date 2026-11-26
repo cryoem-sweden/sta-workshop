@@ -233,7 +233,7 @@ Problems with the installation?
 <li><p>Open the <a href="https://www.cgl.ucsf.edu/chimerax/download.html">ChimeraX download page</a>. Under the heading <strong>ChimeraX 1.12</strong>, click <code>ChimeraX-1.12.exe</code>. Do not take the release candidate or the daily build at the top of the page: ArtiaX does not work with them.</p>
 <p><img src="img/setup/win-chimerax-download.webp" class="img-fluid" width="700"></p></li>
 <li><p>Run the installer with the default settings.</p></li>
-<li><p>Start ChimeraX. Click into the field next to <strong>Command:</strong> at the bottom of the window, type <code>toolshed install ArtiaX</code> and press Enter. The log shows “Installed ChimeraX-ArtiaX”.</p>
+<li><p>Start ChimeraX. Click into the field next to <strong>Command:</strong> at the bottom of the window, type <code>toolshed install ArtiaX</code> and press Enter. The log shows “Installed ChimeraX-ArtiaX”. If orange warnings about numpy appear above it, you can ignore them.</p>
 <p><img src="img/setup/win-chimerax-artiax-install.webp" class="img-fluid" width="700"></p></li>
 <li><p>In the same field, type <code>pip install pandas==3.0.5</code> and press Enter. The log shows no message for this command. That is normal.</p>
 <p><img src="img/setup/win-chimerax-pandas.webp" class="img-fluid" width="700"></p>
@@ -291,17 +291,82 @@ Already have IMOD?
 </section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Instructions for macOS follow soon.</p>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>The screenshots show a Mac with Apple Silicon (M1, M2, …).</p>
 <section id="cluster-login-and-files" class="level3">
 <h3 data-anchor-id="cluster-login-and-files">1. Cluster login and files</h3>
-<p>Nothing to install. In a terminal, use <code>ssh</code> to log in and <code>scp</code> to copy files:</p>
+<p>Nothing to install. Open the app <strong>Terminal</strong> (in Applications, Utilities).</p>
+<ol type="1">
+<li><p>To log in, type the following and press Enter. Use your course user name instead of <code>&lt;user&gt;</code>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="op">&lt;</span>user<span class="op">&gt;</span>@login.cryoem.se</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> <span class="op">&lt;</span>user<span class="op">&gt;</span>@login.cryoem.se:<span class="op">&lt;</span>path on the cluster<span class="op">&gt;</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="img/setup/mac-ssh.png" class="img-fluid" width="600"></p></li>
+<li><p>The first time you connect, the Terminal asks whether you want to continue connecting. Type <code>yes</code> and press Enter. Then type your password and press Enter. The password is not shown while you type. After the login, the prompt shows your user name and <code>login1</code>.</p>
+<p><img src="img/setup/mac-ssh-login.png" class="img-fluid" width="600"></p></li>
+<li><p>To log out, type <code>exit</code>. To copy a file from the cluster to your laptop, use <code>scp</code> in a Terminal on your laptop (not on the cluster):</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> <span class="op">&lt;</span>user<span class="op">&gt;</span>@login.cryoem.se:<span class="op">&lt;</span>path on the cluster<span class="op">&gt;</span> ~/Downloads/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+</section>
+<section id="imod-3dmod" class="level3">
+<h3 data-anchor-id="imod-3dmod">2. IMOD (3dmod)</h3>
+<p>IMOD needs Python on the Mac.</p>
+<ol type="1">
+<li><p>In the Terminal, type <code>python3 --version</code> and press Enter. If it shows a version number, Python is installed and you can go on with step 2.</p>
+<p><img src="img/setup/mac-python-check.png" class="img-fluid" width="600"></p>
+<p>If it shows an error or asks to install developer tools, install Python first: the <a href="https://bio3d.colorado.edu/imod/download.html">IMOD download page</a> links the Python 3.10 installer from python.org in its Mac section.</p></li>
+<li><p>Open the <a href="https://bio3d.colorado.edu/imod/download.html">IMOD download page</a> and go to <strong>Latest Stable Release Packages - Mac</strong>. For a Mac with Apple Silicon, click <strong>clickable installer</strong> in the line <strong>Mac OS 12 - 27 for arm64 processor</strong>. For an Intel Mac, use the line <strong>for Intel processor</strong>.</p>
+<p><img src="img/setup/mac-imod-download.png" class="img-fluid" width="700"></p></li>
+<li><p>Double-click the downloaded <code>.pkg</code> file and follow the installer with the default settings. It asks for your Mac password.</p>
+<p><img src="img/setup/mac-imod-install-done.png" class="img-fluid" width="500"></p></li>
+<li><p>Close the Terminal and open a new one. The new Terminal knows where IMOD is. Type <code>which 3dmod</code>: it shows <code>/Applications/IMOD/bin/3dmod</code>.</p>
+<p><img src="img/setup/mac-imod-which.png" class="img-fluid" width="600"></p></li>
+<li><p>Type <code>3dmod</code> and press Enter. In the window “3dmod Startup”, click <strong>Select…</strong> next to <strong>Image file(s)</strong>, choose a file and click <strong>OK</strong>. Do not use the 3dmod icon in Launchpad: it does not work.</p>
+<p><img src="img/setup/mac-3dmod-startup.png" class="img-fluid" width="700"></p></li>
+<li><p>To test it, download <a href="https://bio3d.colorado.edu/ftp/Windows3dmod/golgi.mrc">golgi.mrc</a> and open it. 3dmod shows the image.</p>
+<p><img src="img/setup/mac-3dmod-open.png" class="img-fluid" width="700"></p></li>
+</ol>
 </section>
 <section id="chimerax-1.12-with-artiax-1" class="level3">
-<h3 data-anchor-id="chimerax-1.12-with-artiax-1">2. ChimeraX 1.12 with ArtiaX</h3>
+<h3 data-anchor-id="chimerax-1.12-with-artiax-1">3. ChimeraX 1.12 with ArtiaX</h3>
+<ol type="1">
+<li><p>Open the <a href="https://www.cgl.ucsf.edu/chimerax/download.html">ChimeraX download page</a>. Under the heading <strong>ChimeraX 1.12</strong>, click <code>ChimeraX-1.12.dmg</code>. For an Intel Mac, click <strong>Other platforms</strong> below it. Do not take the release candidate or the daily build: ArtiaX does not work with them.</p>
+<p><img src="img/setup/mac-chimerax-download.png" class="img-fluid" width="700"></p></li>
+<li><p>Open the <code>.dmg</code> file and drag <strong>ChimeraX-1.12</strong> to <strong>Applications</strong>.</p>
+<p><img src="img/setup/mac-chimerax-dmg.png" class="img-fluid" width="600"></p></li>
+<li><p>Start ChimeraX from Applications. The first start shows a registration form. You can fill it in or close it.</p>
+<p><img src="img/setup/mac-chimerax-register.png" class="img-fluid" width="500"></p></li>
+<li><p>Click into the field next to <strong>Command:</strong> at the bottom of the window, type <code>toolshed install ArtiaX</code> and press Enter. The log shows “Installed ChimeraX-ArtiaX”. Orange warnings about numpy above it are normal and can be ignored.</p>
+<p><img src="img/setup/mac-chimerax-artiax-install.png" class="img-fluid" width="700"></p></li>
+<li><p>In the same field, type <code>pip install pandas==3.0.5</code> and press Enter. The log shows no message for this command. That is normal.</p>
+<p><img src="img/setup/mac-chimerax-pandas.png" class="img-fluid" width="700"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Why this step?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The current ArtiaX release installs a pandas version that does not work with ChimeraX 1.12, so ArtiaX does not start. This step installs a version that works.</p>
+</div>
+</div></li>
+<li><p>Quit ChimeraX (<strong>ChimeraX</strong>, <strong>Quit ChimeraX</strong>) and start it again.</p></li>
+<li><p>Click the <strong>ArtiaX</strong> tab at the top, then <strong>Launch</strong>.</p>
+<p><img src="img/setup/mac-chimerax-artiax-tab.png" class="img-fluid" width="700"></p></li>
+<li><p>The ArtiaX panel opens. ChimeraX and ArtiaX are ready.</p>
+<p><img src="img/setup/mac-chimerax-artiax-open.png" class="img-fluid" width="700"></p></li>
+</ol>
+</section>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<section id="cluster-login-and-files-1" class="level3">
+<h3 data-anchor-id="cluster-login-and-files-1">1. Cluster login and files</h3>
+<p>Nothing to install. In a terminal, use <code>ssh</code> to log in and <code>scp</code> to copy files:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="op">&lt;</span>user<span class="op">&gt;</span>@login.cryoem.se</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> <span class="op">&lt;</span>user<span class="op">&gt;</span>@login.cryoem.se:<span class="op">&lt;</span>path on the cluster<span class="op">&gt;</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="chimerax-1.12-with-artiax-2" class="level3">
+<h3 data-anchor-id="chimerax-1.12-with-artiax-2">2. ChimeraX 1.12 with ArtiaX</h3>
 <ol type="1">
 <li>Download ChimeraX 1.12 for your distribution from the <a href="https://www.cgl.ucsf.edu/chimerax/download.html">ChimeraX download page</a> (heading <strong>ChimeraX 1.12</strong>, under <strong>Other platforms</strong>) and install it.</li>
 <li>Follow steps 3 to 7 of the Windows instructions: <code>toolshed install ArtiaX</code>, then <code>pip install pandas==3.0.5</code>, restart ChimeraX, then <strong>ArtiaX</strong>, <strong>Launch</strong>.</li>
