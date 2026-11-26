@@ -123,7 +123,7 @@ events:
       - Alberto Bartesaghi
     content: ""
 
-  - title: "Lunch & coffee / tea"
+  - title: "Lunch"
     type: lunch
     group: "Day 1"
     start: 2026-12-02T12:30:00
@@ -142,7 +142,7 @@ events:
       - Alberto Bartesaghi
     content: ""
 
-  - title: "Coffee / tea & cake"
+  - title: "Coffee / tea"
     type: break
     group: "Day 1"
     start: 2026-12-02T15:30:00
@@ -155,8 +155,7 @@ events:
     type: practical
     group: "Day 1"
     start: 2026-12-02T16:00:00
-    # TODO: end time is not in the program draft; 17:30 is assumed.
-    end: 2026-12-02T17:30:00
+    end: 2026-12-02T17:00:00
     location: "Air & Fire"
     people:
       - Alberto Bartesaghi
@@ -196,7 +195,7 @@ events:
       - Anna Berdichevskaia
     content: ""
 
-  - title: "Lunch & coffee / tea"
+  - title: "Lunch"
     type: lunch
     group: "Day 2"
     start: 2026-12-03T12:30:00
@@ -216,7 +215,7 @@ events:
       - Anna Berdichevskaia
     content: ""
 
-  - title: "Coffee / tea & cake"
+  - title: "Coffee / tea"
     type: break
     group: "Day 2"
     start: 2026-12-03T15:30:00
@@ -288,7 +287,7 @@ events:
       - Misha Kudryashev
     content: ""
 
-  - title: "Lunch & coffee / tea"
+  - title: "Lunch"
     type: lunch
     group: "Day 3"
     start: 2026-12-04T12:30:00
@@ -307,7 +306,7 @@ events:
       - Dimitry Tegunov
     content: ""
 
-  - title: "Coffee / tea & cake"
+  - title: "Coffee / tea"
     type: break
     group: "Day 3"
     start: 2026-12-04T15:30:00

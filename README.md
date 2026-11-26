@@ -80,6 +80,7 @@ preparation and setup, with notes for each module.
 | Gerrit Timpert | Training lead | Yes |  | Stockholm University |
 | Stavros Azinas | Training lead | Yes |  | Stockholm University |
 | Alberto Bartesaghi | Instructor | Yes |  | Duke University, Durham, NC, USA |
+| Alperen Tupurtu | Instructor | Yes |  | Duke University, Durham, NC, USA |
 | Misha Kudryashev | Instructor | Yes |  | Max Delbrück Center for Molecular Medicine in the Helmholtz Association, Berlin |
 | Anna Berdichevskaia | Instructor | Yes |  | Helmholtz Zentrum München |
 | Dimitry Tegunov | Instructor | Yes |  | Genentech, South San Francisco, California |
@@ -104,7 +105,7 @@ report a problem or suggest a change.
 
 If you use these materials, please cite them as:
 
-> Walldén, K.; Carroni, M.; Coinçon, M.; Timpert, G.; Azinas, S.; Bartesaghi, A.; Kudryashev, M.; Berdichevskaia, A.; Tegunov, D.; Salo, V. T. V. Cryo-ET and Subtomogram averaging Workshop. Version 2612. https://cryoem-sweden.github.io/sta-workshop/2612/
+> Walldén, K.; Carroni, M.; Coinçon, M.; Timpert, G.; Azinas, S.; Bartesaghi, A.; Tupurtu, A.; Kudryashev, M.; Berdichevskaia, A.; Tegunov, D.; Salo, V. T. V. Cryo-ET and Subtomogram averaging Workshop. Version 2612. https://cryoem-sweden.github.io/sta-workshop/2612/
 
 Citation metadata is available in [CITATION.cff](CITATION.cff).
 <!-- /generated:citation -->
