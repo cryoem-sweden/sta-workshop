@@ -92,7 +92,8 @@ log in again.
 
 3. Start ChimeraX. Click into the field next to **Command:** at the bottom of
    the window, type `toolshed install ArtiaX` and press Enter. The log shows
-   "Installed ChimeraX-ArtiaX".
+   "Installed ChimeraX-ArtiaX". If orange warnings about numpy appear above
+   it, you can ignore them.
 
    ![](img/setup/win-chimerax-artiax-install.webp){width=700}
 
@@ -168,7 +169,125 @@ standalone package.
 
 ## macOS
 
-Instructions for macOS follow soon.
+The screenshots show a Mac with Apple Silicon (M1, M2, ...).
+
+### 1. Cluster login and files
+
+Nothing to install. Open the app **Terminal** (in Applications, Utilities).
+
+1. To log in, type the following and press Enter. Use your course user name
+   instead of `<user>`.
+
+   ```bash
+   ssh <user>@login.cryoem.se
+   ```
+
+   ![](img/setup/mac-ssh.png){width=600}
+
+2. The first time you connect, the Terminal asks whether you want to continue
+   connecting. Type `yes` and press Enter. Then type your password and press
+   Enter. The password is not shown while you type. After the login, the
+   prompt shows your user name and `login1`.
+
+   ![](img/setup/mac-ssh-login.png){width=600}
+
+3. To log out, type `exit`. To copy a file from the cluster to your laptop,
+   use `scp` in a Terminal on your laptop (not on the cluster):
+
+   ```bash
+   scp <user>@login.cryoem.se:<path on the cluster> ~/Downloads/
+   ```
+
+### 2. IMOD (3dmod)
+
+IMOD needs Python on the Mac.
+
+1. In the Terminal, type `python3 --version` and press Enter. If it shows a
+   version number, Python is installed and you can go on with step 2.
+
+   ![](img/setup/mac-python-check.png){width=600}
+
+   If it shows an error or asks to install developer tools, install Python
+   first: the [IMOD download page](https://bio3d.colorado.edu/imod/download.html)
+   links the Python 3.10 installer from python.org in its Mac section.
+
+2. Open the [IMOD download page](https://bio3d.colorado.edu/imod/download.html)
+   and go to **Latest Stable Release Packages - Mac**. For a Mac with Apple
+   Silicon, click **clickable installer** in the line
+   **Mac OS 12 - 27 for arm64 processor**. For an Intel Mac, use the line
+   **for Intel processor**.
+
+   ![](img/setup/mac-imod-download.png){width=700}
+
+3. Double-click the downloaded `.pkg` file and follow the installer with the
+   default settings. It asks for your Mac password.
+
+   ![](img/setup/mac-imod-install-done.png){width=500}
+
+4. Close the Terminal and open a new one. The new Terminal knows where IMOD
+   is. Type `which 3dmod`: it shows `/Applications/IMOD/bin/3dmod`.
+
+   ![](img/setup/mac-imod-which.png){width=600}
+
+5. Type `3dmod` and press Enter. In the window "3dmod Startup", click
+   **Select...** next to **Image file(s)**, choose a file and click **OK**.
+   Do not use the 3dmod icon in Launchpad: it does not work.
+
+   ![](img/setup/mac-3dmod-startup.png){width=700}
+
+6. To test it, download
+   [golgi.mrc](https://bio3d.colorado.edu/ftp/Windows3dmod/golgi.mrc) and
+   open it. 3dmod shows the image.
+
+   ![](img/setup/mac-3dmod-open.png){width=700}
+
+### 3. ChimeraX 1.12 with ArtiaX
+
+1. Open the [ChimeraX download page](https://www.cgl.ucsf.edu/chimerax/download.html).
+   Under the heading **ChimeraX 1.12**, click `ChimeraX-1.12.dmg`. For an
+   Intel Mac, click **Other platforms** below it. Do not take the release
+   candidate or the daily build: ArtiaX does not work with them.
+
+   ![](img/setup/mac-chimerax-download.png){width=700}
+
+2. Open the `.dmg` file and drag **ChimeraX-1.12** to **Applications**.
+
+   ![](img/setup/mac-chimerax-dmg.png){width=600}
+
+3. Start ChimeraX from Applications. The first start shows a registration
+   form. You can fill it in or close it.
+
+   ![](img/setup/mac-chimerax-register.png){width=500}
+
+4. Click into the field next to **Command:** at the bottom of the window,
+   type `toolshed install ArtiaX` and press Enter. The log shows
+   "Installed ChimeraX-ArtiaX". Orange warnings about numpy above it are
+   normal and can be ignored.
+
+   ![](img/setup/mac-chimerax-artiax-install.png){width=700}
+
+5. In the same field, type `pip install pandas==3.0.5` and press Enter. The
+   log shows no message for this command. That is normal.
+
+   ![](img/setup/mac-chimerax-pandas.png){width=700}
+
+   ::: {.callout-note}
+   ## Why this step?
+
+   The current ArtiaX release installs a pandas version that does not work
+   with ChimeraX 1.12, so ArtiaX does not start. This step installs a version
+   that works.
+   :::
+
+6. Quit ChimeraX (**ChimeraX**, **Quit ChimeraX**) and start it again.
+
+7. Click the **ArtiaX** tab at the top, then **Launch**.
+
+   ![](img/setup/mac-chimerax-artiax-tab.png){width=700}
+
+8. The ArtiaX panel opens. ChimeraX and ArtiaX are ready.
+
+   ![](img/setup/mac-chimerax-artiax-open.png){width=700}
 
 ## Linux
 
