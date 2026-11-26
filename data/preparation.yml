@@ -133,9 +133,6 @@ preparation:
             - title: "ChimeraX download"
               url: "https://www.cgl.ucsf.edu/chimerax/download.html"
 
-            - title: "ArtiaX"
-              url: "https://github.com/FrangakisLab/ArtiaX"
-
             - title: "Step-by-step guide with screenshots"
               url: "setup-guide.html"
 

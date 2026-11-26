@@ -289,7 +289,9 @@ IMOD needs Python on the Mac.
 
    ![](img/setup/mac-chimerax-artiax-open.png){width=700}
 
-## Linux
+## Linux (Ubuntu)
+
+These instructions are for Ubuntu 22.04 and 24.04.
 
 ### 1. Cluster login and files
 
@@ -306,18 +308,38 @@ scp <user>@login.cryoem.se:<path on the cluster> .
 
 ### 2. ChimeraX 1.12 with ArtiaX
 
-1. Download ChimeraX 1.12 for your distribution from the
-   [ChimeraX download page](https://www.cgl.ucsf.edu/chimerax/download.html)
-   (heading **ChimeraX 1.12**, under **Other platforms**) and install it.
-2. Follow steps 3 to 7 of the Windows instructions: `toolshed install ArtiaX`,
+1. Open the [ChimeraX download page](https://www.cgl.ucsf.edu/chimerax/download.html).
+   Under the heading **ChimeraX 1.12**, click **Other platforms** and download
+   `ucsf-chimerax_1.12ubuntu24.04_amd64.deb` (Ubuntu 24.04) or
+   `ucsf-chimerax_1.12ubuntu22.04_amd64.deb` (Ubuntu 22.04).
+
+2. Install it, for example on Ubuntu 24.04:
+
+   ```bash
+   sudo apt install ~/Downloads/ucsf-chimerax_1.12ubuntu24.04_amd64.deb
+   ```
+
+3. Start ChimeraX with the command `chimerax`.
+
+4. Follow steps 3 to 7 of the Windows instructions: `toolshed install ArtiaX`,
    then `pip install pandas==3.0.5`, restart ChimeraX, then **ArtiaX**,
    **Launch**.
 
-### 3. IMOD
+### 3. IMOD (3dmod)
 
-Install IMOD 5.x with the installer for Linux from the
-[IMOD download page](https://bio3d.colorado.edu/imod/download.html) and
-follow its instructions. Afterwards, open a new terminal and run `3dmod`.
+1. Open the [IMOD download page](https://bio3d.colorado.edu/imod/download.html)
+   and download the package under **Red Hat Enterprise Linux 8 - CUDA 12**
+   (`imod_5.1.13_RHEL8-64_CUDA12.0.sh`). Despite its name, this is the
+   package the IMOD team recommends for Ubuntu 20 and newer.
+
+2. Install it from a terminal in the download folder:
+
+   ```bash
+   sudo sh imod_5.1.13_RHEL8-64_CUDA12.0.sh
+   ```
+
+3. Log out and log in again, then open a terminal and type `3dmod`. See the
+   Windows instructions, step 5, for how to open a file.
 
 :::
 
