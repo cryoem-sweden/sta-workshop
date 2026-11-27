@@ -349,14 +349,14 @@ content:
 
   sections:
 
-    - id: module-1
-      label: "Module 1"
-      title: "How to structure a page"
+    - id: day-1
+      label: "Day 1: nextPYP"
+      title: "nextPYP"
 
-    - id: module-2
-      label: "Module 2"
-      title: "How to highlight information"
+    - id: day-2
+      label: "Day 2: TomoBEAR"
+      title: "TomoBEAR"
 
-    - id: module-3
-      label: "Module 3"
-      title: "Module 3 Title"
+    - id: day-3
+      label: "Day 3: Warp/M"
+      title: "Warp and M"

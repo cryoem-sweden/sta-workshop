@@ -1,0 +1,8 @@
+---
+title: "nextPYP"
+order: 1
+---
+
+nextPYP runs on a server of the nextPYP team. You only need a web browser,
+no login to our cluster. The tutorial for this session will be published
+here before the course.
