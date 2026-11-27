@@ -16,7 +16,6 @@ project:
     - faq.qmd
     - announcements.qmd
     
-
   pre-render:
     - python scripts/render_course.py
     
