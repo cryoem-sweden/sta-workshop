@@ -59,6 +59,7 @@ preparation:
             - "Windows: install MobaXterm. macOS and Linux: nothing to install for the cluster."
             - "Install ChimeraX 1.12 with ArtiaX and check that ArtiaX starts."
             - "Install 3dmod and open the test file golgi.mrc."
+            - "Install two up-to-date web browsers: Google Chrome and Mozilla Firefox. Some sessions run in the browser, and if one browser does not work, you can switch to the other."
             - "Bring your laptop and its charger."
 
 
@@ -156,6 +157,25 @@ preparation:
             
             - title: "Step-by-step guide with screenshots"
               url: "setup-guide.html"
+        
+        - type: software
+          title: "Web browsers"
+
+          description: >
+            Some sessions run in the web browser. Please install both
+            Chrome and Firefox, so you can switch if one does not work.
+
+          instructions: |
+            Install or update Google Chrome and Mozilla Firefox to the
+            latest version.
+
+          links:
+            - title: "Google Chrome download"
+              url: "https://www.google.com/chrome/"
+
+            - title: "Mozilla Firefox download"
+              url: "https://www.mozilla.org/firefox/new/"
+
 
         - type: callout
           style: note
