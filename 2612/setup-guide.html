@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <li>ChimeraX 1.12 with the ArtiaX plugin</li>
 <li>3dmod, the viewer from IMOD</li>
 </ul>
-<p>You need a laptop on which you can install software. Choose your operating system below.</p>
+<p>You need a laptop on which you can install software. You get your course user name and password at the course, so you can only test the cluster login there. Choose your operating system below.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -302,7 +302,8 @@ Already have IMOD?
 <li><p>The first time you connect, the Terminal asks whether you want to continue connecting. Type <code>yes</code> and press Enter. Then type your password and press Enter. The password is not shown while you type. After the login, the prompt shows your user name and <code>login1</code>.</p>
 <p><img src="img/setup/mac-ssh-login.png" class="img-fluid" width="600"></p></li>
 <li><p>To log out, type <code>exit</code>. To copy a file from the cluster to your laptop, use <code>scp</code> in a Terminal on your laptop (not on the cluster):</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> <span class="op">&lt;</span>user<span class="op">&gt;</span>@login.cryoem.se:<span class="op">&lt;</span>path on the cluster<span class="op">&gt;</span> ~/Downloads/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> <span class="op">&lt;</span>user<span class="op">&gt;</span>@login.cryoem.se:<span class="op">&lt;</span>path on the cluster<span class="op">&gt;</span> ~/Downloads/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For a folder, add <code>-r</code>: <code>scp -r &lt;user&gt;@login.cryoem.se:&lt;path&gt; ~/Downloads/</code></p></li>
 </ol>
 </section>
 <section id="imod-3dmod" class="level3">
