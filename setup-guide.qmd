@@ -72,7 +72,7 @@ where you can download them. The free Home Edition is enough.
    ![](img/setup/win-moba-password.webp){width=700}
 
 9. After the login, the sidebar on the left shows your files on the cluster.
-   To copy a file to your laptop, right-click it and choose **Download**.
+   To copy a file or folder to your laptop, right-click it and choose **Download**.
 
    ![](img/setup/win-moba-sftp-download.webp){width=700}
 
