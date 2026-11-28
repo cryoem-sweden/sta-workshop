@@ -15,8 +15,9 @@ Please install the following programs on your laptop before the course:
 - ChimeraX 1.12 with the ArtiaX plugin
 - 3dmod, the viewer from IMOD
 
-You need a laptop on which you can install software. Choose your operating
-system below.
+You need a laptop on which you can install software. You get your course
+user name and password at the course, so you can only test the cluster login
+there. Choose your operating system below.
 
 ::: {.callout-note}
 ## Problems with the installation?
@@ -197,6 +198,7 @@ Nothing to install. Open the app **Terminal** (in Applications, Utilities).
    ```bash
    scp <user>@login.cryoem.se:<path on the cluster> ~/Downloads/
    ```
+   For a folder, add `-r`: `scp -r <user>@login.cryoem.se:<path> ~/Downloads/`
 
 ### 2. IMOD (3dmod)
 
